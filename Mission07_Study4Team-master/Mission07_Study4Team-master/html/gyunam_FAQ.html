@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link  rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"/>
+  <link	rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"/>
+  <link rel="stylesheet" href="../css/gyunam.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="../javascript/gyunam.js"></script>
+  <title>회원가입</title>
+
+  
+</head>
+<body>
+
+  
+<header>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img src="../resources/images/gyunam_logo.jpg" alt="회사 로고" class="logo1">
+          
+        </a>
+      </div>
+  
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+         
+          <li class="dropdown ">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">회사소개 <span></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">인사말</a></li>
+              <li><a href="#">회사소개</a></li>
+              <li><a href="#">오시는길</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">대여소및 반납 <span></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">대여소 조회</a></li>
+              <li><a href="#">반납 장소</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">이용권 구매 <span></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">이용권 구매</a></li>
+              <li><a href="#">이용권 사용 방법</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">문의/FAQ <span></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">문의</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">공지사항</a></li>
+            </ul>
+          </li>
+        </ul>
+        
+              
+        <form class="navbar-form navbar-right" role="search">
+          <div class="login_icon ">
+            <img src="../resources/images/gyunam_loginicon.svg" alt="로그인 이미지"><span>&nbsp;&nbsp;&nbsp;로그인</span>
+            <img src="../resources/images/gyunam_user_plusicon.svg" alt="회원가입 이미지"><span>&nbsp;회원가입</span>
+            <img src="../resources/images/gyunam_usericon.svg" alt="가입정보 이미지"><span>&nbsp;&nbsp;가입정보</span>
+            <img src="../resources/images/gyunam_telephoneicon.svg" alt="고객센터 이미지"><span>고객센터</span>
+        
+          </div>
+          <div class="form-group">
+
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">검색</button>
+        </form>
+     
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+</header>     
+
+  <div class="faq_wrap">
+    <h4>* FAQ *</h4>
+    <ul>
+       <li>
+        <p>
+          <button><span>Q</span>쌩쌩이 반납은 어떻게 하나요?</h3></button>
+        </p>
+       </li>
+       <li>
+        <div class="answer">
+          <span>A.</span><br> -대여소 거치대에 거치한 후 뒷바퀴부분의 잠금장치를 당겨서 잠금합니다.<br>-정상반납된 경우 단말기에서 '정상 반납되었습니다'라는 음성 메시지와 휴대폰으로 반납 되었음을 알려주는 알림톡(문자)이 발송됩니다.
+        </div>
+       </li>
+       <li>
+        <p>
+          <button><span>Q</span>쌩쌩이를 대여한 곳에만 반납해야 하나요?</button>
+        </p>
+       </li>
+       <li>
+        <div class="answer">
+          <span>A.</span><br> -대여하신 곳과 상관없이 가까운 따릉이 전용 대여소에 반납하시면 됩니다. 다만, 쌩쌩이 전용대여소가 아닌곳에 자전거를 잠금하는 것(자가잠금 등)은 정상적인 반납이 아니며,“이용중”인 상태로서, 장기 방치시 추가요금이 발생합니다.
+          가까운 대여소를 찾는 방법은 대여중 상태의 따릉이 앱에서 메인화면의 대여중 옆의 탭 "가까운 대여소" 를 눌러확인 가능합니다.
+        </div>
+       </li>
+       <li>
+        <p>
+          <button><span>Q</span>정기권 및 이용권 이용방법</button>
+        </p>
+       </li>
+       <li>
+        <div class="answer">
+          <span>A.</span><br> 정기권/일일권(1시간) 이용 방법 <br>
+         -일일 한번에 한시간씩 사용하고 반납하는것이 원칙!
+           <br> -한번 빌리면 대여시간 기본 60분
+         
+        </div>
+       </li>
+       <li>
+        <p>
+          <button><span>Q</span>자전거 안장을 조절 할 수 있나요?</button>
+        </p>
+       </li>
+       <li>
+        <div class="answer">
+          <span>A.</span><br>- 존 쌩쌩이의 안장높이 조절은 이용자 조임방식의 페달축으로부터 43~58cm까지 조절할 수 있는 모델이며, 높이조절량을 알기 쉽게 8단계로 나누어 표시한 모델입니다.
+         
+        </div>
+       </li>
+       <li>
+        <p>
+          <button><span>Q</span>자전거 기어 단수가 너무 낮습니다.</button>
+        </p>
+       </li>
+       <li>
+        <div class="answer">
+          <span>A.</span><br>-자전거 활성화를 통한 녹색교통체계를 구축하기 위하여 근거리 교통보조수단용으로 설계·제작된 쌩쌩이는 공공자전거라는 특성상 다양한 이용시민의 안전을 고려하지 않을 수없었으므로, 속도에 제한을 두고자 내장형 3단기어로 운영중인 사항이므로, 양해 부탁드립니다
+         
+        </div>
+       </li>
+       <li>
+        <p>
+          <button><span>Q</span>쌩쌩이를 이용을 어떻게 해야하나요?</button>
+        </p>
+       </li>
+       <li>
+        <div class="answer">
+          <span>A.</span><br>
+           -자전거는 회원 및 비회원으로 모두 이용이 가능합니다. 다만, 비회원은
+          일일권만 구매 가능합니다.
+          <br> 1. 회원으로 이용하는 방법
+          <br> ‣ 회원가입->이용권구매->자전거대여,반납
+         <br> 2. 비회원으로 이용하는 방법
+          <br>‣ (비회원)이용권구매->자전거대여,반납 순으로 이용가능합니다.
+         
+        </div>
+       </li>
+  </div>    
+
+
+       
+  
+  
+  
+  
+  
+  <!-- 제이쿼리 부트스트랩 자바스크립트 영역 -->
+    
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+      <script src="../javascript/jquery.tubular.1.0.js"></script>
+      <script src="../javascript/vegas.min.js"></script>
+      
+    <footer>
+       
+      <h3> 예약문의 : 1588-1004<img class="img_logo" src="../resources/images/gyunam_biking.svg" alt=""></h6>
+        <address>주소 : 서울시 구로구 경인로 557 4층 &nbsp;&nbsp;대표 : 김씽씽 &nbsp;&nbsp; 사업자 번호 : 123-456-789<br> e-mail : hicycle1004@google.com</address>
+  
+    </footer>  
+</body>
+    
+</html>

@@ -1,0 +1,127 @@
+ /* 페이지 전체에 적용 */
+ @font-face{
+  font-family:'bitbit';
+  src:url('//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff') ;
+ }
+
+
+
+@media screen and (max-width: 625px) {
+	nav > .menu{
+		background-color: rgb(16, 76, 186);
+    }
+}
+
+@media screen and (max-width: 625px) {
+	nav > .menu a{
+		color: rgb(230, 230, 114);
+    }
+}
+
+
+  * {
+    font-family: 'bitbit' !important;
+  }
+
+
+ 
+ body {
+  background: beige;
+  min-height: 100%;
+  height: auto;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+nav>.menu>li:hover{
+  
+  background-color: bisque;
+}
+
+nav>.menu>li:hover a{
+  
+  color: pink;
+}
+/* 커서를 올렸을 때 반응이 있다는 느낌을 주기 위해 백그라운드컬러도 변경 */
+
+
+.menu{float: right; width: 100%; background-color: cornflowerblue}
+
+.menu li{float: left; list-style: none;}
+
+.menu a{line-height: 75px; color: white; text-decoration: none; margin-inline: 89.2px; font-size: 30px;}
+
+.btn-group {
+  right: -48.8%;
+  margin-top: 100px;
+}
+
+.dropdown-menu > .video {
+  font-size: 20px;
+  color: black;
+  text-decoration-line: none;
+}
+
+.dropdown-menu:hover {
+  background-color: beige;
+}
+
+.dropdown-menu > .video:hover {
+  color: pink;
+}
+
+.wrap > .btn_open:hover {
+  color : pink  !important;
+  text-decoration: none;
+}
+
+
+.btn_open {
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+.pop_wrap{position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,.5); font-size:0; text-align:center;}
+.pop_wrap:after{display:inline-block; height:100%; vertical-align:middle; content:'';}
+.pop_wrap .pop_inner{display:inline-block; padding:20px 30px; background:#fff; width:700px; vertical-align:middle; font-size:25px;}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#body-wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+#body-content {
+  padding-bottom: 170px; /* footer의 높이 */
+}
+
+footer {
+  width: 100%;
+  height: 170px; /* footer의 높이 */
+  position: absolute;  
+  bottom: 0;
+  left: 0;
+}
+footer h2{
+  text-align: center;
+  line-height: 70px;
+}
+address{
+  text-align: center;
+  font-size: 20px;
+} 
+
+.cjp {
+  margin-left: 600px;
+  
+}
+
+hr { 
+  height: 1px;
+}

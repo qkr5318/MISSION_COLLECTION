@@ -1,0 +1,206 @@
+@charset "UTF-8";
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    font-family: "맑은 고딕";
+    font-size: 16px;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    margin: 0px;
+}
+
+
+
+.head{
+    background: url(../resources/images/jh_main.jpg) no-repeat;
+    background-size: 100% 300%;
+    background-position: 60%;
+    width: 100%;
+    height: 300px;
+    opacity: 0.7;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    
+}
+.head > a{
+    color: rgba(0, 0, 0, 0.8) ;
+}
+.head > a > p{
+    position: absolute;
+    left: 735px ; top:120px;
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    opacity: 1;
+   
+}
+.menu{
+    width: 1900px;
+    height: 70px;
+    text-align: center;
+    font-size: 17px;
+    background: rgb(230, 230, 230);
+}
+.navi > li{
+    cursor: pointer;
+    display: block;
+    float: left;
+    background: rgb(230, 230, 230);
+    border-left:1px dotted rgba(150, 150, 150, 0.4);
+    height: 70px;
+    width: 270px;
+    font-weight: normal;
+    transition: all 0.3s;
+
+}
+.navi > li:hover{
+    background: #eee;
+    font-weight: bold;
+}
+
+.navi > li > a{
+    width: 270px;
+    text-decoration: none;
+    color: rgba(100,100,100,1);
+    height: 20px;
+    line-height: 70px;
+}
+
+
+
+/* ↑ head영역 */
+
+
+
+.body{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    width: 100%;
+    height: 100%;
+    background: #eee;
+}
+
+.body .faq{
+    width: 1200px;
+    height: 100%;
+    background-color: #fff;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    border: 1px solid #ccc;
+}
+
+
+.faq p{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+
+.faq > ul{
+    width: 800px;
+    text-align: left;
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+.faq > ul:hover{
+    cursor: pointer;
+}
+.faq > ul > .q{
+    padding-left: 20px;
+    padding-top: 20px;  
+    display: block;
+    width: 780px;
+    height: 50px;
+    background-color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    transition: all 0.3s;
+    border-collapse: collapse;
+}
+
+.faq > ul > .q:hover{
+    background: #ddd;
+    
+}
+.faq > ul > .a{
+    display: none;
+    width: 770px;
+    height: auto;
+    cursor: auto;
+    background-color: rgb(248, 248, 248);
+    border-collapse: collapse;
+    border-bottom: 0px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    font-size: 16px;
+    line-height: 25px;
+    
+
+
+}
+
+.faq > ul > .a.on{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ↓  footer영역 */
+.footer{
+    margin-top: 0px;
+    background:rgba(150, 150, 150, 0.4);
+    border: 1px solid #000;
+    width: 100%;
+    height: 200px;
+    
+}
+
+.table3{
+    
+    
+    width: 100%;
+}
+
+.tr3{
+    
+    height: 50px;
+}
+
+.tr3 th{
+    width: 150px;
+    text-align: left;
+    vertical-align: bottom;
+    line-height: 5px;
+    padding:30px 0px 10px 50px;
+   
+    font-size: 18px;
+    border-bottom: 1px solid #333;
+}
+
+.tr3 td{
+    padding-left: 50px;
+}
+

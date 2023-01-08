@@ -1,0 +1,47 @@
+<div class="dtitle">찾아오시는 길</div><br>
+<div class="dsection"> 
+    <div class="location">
+        <div id="map" style="width:600px;height:350px;background-color:#eee;"></div>
+
+        <div id="map" style="width:100%;height:350px;"></div>
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a7d21a87aeee04ff289c689951c65323"></script>
+        <script>
+        var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+            mapOption = { 
+                center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+                level: 3 // 지도의 확대 레벨
+                center: new kakao.maps.LatLng(37.50311297490148, 126.87901172363914), // 지도의 중심좌표
+                level: 2 // 지도의 확대 레벨
+            };
+        
+
+        var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+        
+
+        // 마커가 표시될 위치입니다 
+        var markerPosition  = new kakao.maps.LatLng(33.450701, 126.570667); 
+        
+        var markerPosition  = new kakao.maps.LatLng(37.50311297490148, 126.87901172363914); 
+
+        // 마커를 생성합니다
+        var marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
+        
+
+        // 마커가 지도 위에 표시되도록 설정합니다
+        marker.setMap(map);
+        
+
+        // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+        // marker.setMap(null);    
+        </script>
+    </div>
+ </div>   
+ </div>  
+ <p class="subway"><?xml version="1.0" ?><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><title/><g id="Train"><path d="M406.0981,370V85.0928a55.2568,55.2568,0,0,0-55.1909-55.1909H161.0928a55.2568,55.2568,0,0,0-55.1909,55.1909V370A17.0965,17.0965,0,0,0,123,387.0981h26.7964l-41.4639,69.107a17.1022,17.1022,0,0,0,29.335,17.59l52.018-86.6968h132.629l52.018,86.6968a17.1022,17.1022,0,1,0,29.335-17.59l-41.4639-69.107H389A17.0965,17.0965,0,0,0,406.0981,370ZM180.0035,341.5a28.5,28.5,0,1,1,28.5-28.5A28.4992,28.4992,0,0,1,180.0035,341.5Zm152,0a28.5,28.5,0,1,1,28.5-28.5A28.4992,28.4992,0,0,1,332.0035,341.5Zm39.8984-102.5981H140.0981V121.0981H371.9019Z"></g></svg></p><h3 class="subway_t">지하철</h3><br>
+    구로역 3번출구로 나온 후 구로역광장 대각선 건너편 신한은행 방면으로 도보 3분 소요 
+
+
+
+<p class="bus"><?xml version="1.0" ?><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M488 128h-8V80c0-44.8-99.2-80-224-80S32 35.2 32 80v48h-8c-13.25 0-24 10.74-24 24v80c0 13.25 10.75 24 24 24h8v160c0 17.67 14.33 32 32 32v32c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-32h192v32c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-32h6.4c16 0 25.6-12.8 25.6-25.6V256h8c13.25 0 24-10.75 24-24v-80c0-13.26-10.75-24-24-24zM112 400c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32zm16-112c-17.67 0-32-14.33-32-32V128c0-17.67 14.33-32 32-32h256c17.67 0 32 14.33 32 32v128c0 17.67-14.33 32-32 32H128zm272 112c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32z"/></svg></p><h3 class="bus_t">버스</h3>

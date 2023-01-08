@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link  rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"/>
+  <link	rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"/>
+  <link rel="stylesheet" href="../css/gn_introduce.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="../javascript/gyunam_introduce.js"></script>
+  <title>회사 소개</title>
+  <style>
+.navbar-brand img{
+  width: 80px !important;
+  margin-left: -15px;
+}
+/* nav menu 마우스 올릴시 색바뀜 */
+.navbar-default .navbar-nav>li>a:hover{
+  color: #60c353 !important;
+}
+  </style>
+  
+</head>
+<body>
+ 
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img src="../resources/images/gn_logo.jpg" alt="회사 로고">
+        </a>
+      </div>
+  
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+         
+          <li class="dropdown ">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">회사소개 <span></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">인사말</a></li>
+              <li><a href="#">회사소개</a></li>
+              <li><a href="#">오시는길</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">대여소및 반납 <span></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">대여소 조회</a></li>
+              <li><a href="#">반납 장소</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">이용권 구매 <span></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">이용권 구매</a></li>
+              <li><a href="#">이용권 사용 방법</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">문의/FAQ <span></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">문의</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">공지사항</a></li>
+            </ul>
+          </li>
+        </ul>
+        
+              
+        <form class="navbar-form navbar-right" role="search">
+          <div class="login_icon ">
+            <img src="../resources/images/gn_loginicon.svg" alt="로그인 이미지"><span>&nbsp;&nbsp;&nbsp;로그인</span>
+            <img src="../resources/images/gn_user_plusicon.svg" alt="회원가입 이미지"><span>&nbsp;회원가입</span>
+            <img src="../resources/images/gn_usericon.svg" alt="가입정보 이미지"><span>&nbsp;&nbsp;가입정보</span>
+            <img src="../resources/images/gn_telephoneicon.svg" alt="고객센터 이미지"><span>고객센터</span>
+        
+          </div>
+          <div class="form-group">
+
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">검색</button>
+        </form>
+     
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  
+  
+    <div id="wrapper">
+      <div class="volum_icon">
+        <a href="#" class="tubular-play"><img class="icon" src="../resources/images/gn_playicon.svg" alt=""></a>
+        <a href="#" class="tubular-pause"><img class="icon"src="../resources/images/gn_pause_icon.svg" alt=""></a>
+        <a href="#" class="tubular-volume-up"><img class="icon"src="../resources/images/gn_high_volume_icon.svg" alt=""></a>
+        <a href="#" class="tubular-volume-down"><img class="icon"src="../resources/images/gn_volume_low_icon.svg" alt=""></a>
+        <a href="#" class="tubular-mute"><img class="icon"src="../resources/images/gn_mute_sound_icon.svg" alt=""></a>
+     </div>  
+         
+      
+      <script>
+          $("document").ready(function() {
+              var options = { videoId: '7MD29MXASxc', mute:true };
+              $('#wrapper').tubular(options);
+              // f-UGhWj1xww cool sepia hd
+              // 49SKbS7Xwf4 beautiful barn sepia
+          });
+
+    
+          
+          </script>
+    </div>
+    <!-- 이미지 슬라이드 영역 -->
+    <!-- <script src="js/vegas.min.js"></script>
+    <div class="slide"> </div>
+    <script>
+  
+      $('.slide').vegas({
+        delay: 7000,
+        timer: false,
+        shuffle: true,
+        firstTransition: 'fade',
+        firstTransitionDuration: 5000,
+        transition: 'slideDown2',
+        transitionDuration: 2000,
+        slides: [
+          { src: 'image/gn_cycle1.jpg' },
+          { src: 'image/gn_cycle2.jpg' },
+          { src: 'image/gn_cycle3.jpg' }
+     ]
+    });
+    </script> -->
+    <!-- 소개글 영역 -->
+    <div class="jumbotron">
+      <i class="fad fa-biking">
+        <img style="width: 30px;" src="../resources/images/gn_biking.svg" alt="">
+      </i>
+      <h2>건강과 자연을 지키는 하이 자전거</h2>
+      <ul>
+        <li>1.언제 어디서나 쉽게 대여가 가능하여 편의성이 좋습니다.</li>
+        <li>2.편하게 이용하고 건강도 지키켜요&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+        <li>3.지구온난화 멈춰! 자전거를 타고 지구도 지켜요&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+      </ul>
+    </div>
+    
+    
+    <!-- 제이쿼리 부트스트랩 자바스크립트 영역 -->
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="../javascript/jquery.tubular.1.0.js"></script>
+    
+  <footer>
+    <h3>예약문의 : 1588-1004</h6>
+      <address>주소 : 서울시 구로구 경인로 557 4층 &nbsp;&nbsp;대표 : 김씽씽 &nbsp;&nbsp; 사업자 번호 : 123-456-789<br> e-mail : hicycle1004@google.com</address>
+
+  </footer>  
+  </body>
+  
+  </html>

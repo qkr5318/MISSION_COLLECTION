@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+.Hfont{font-family: 'Anton&display';
+        text-align: center;
+}
+.menu {
+    display: inline; 
+    display: flex;
+    display: -webkit-box;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+
+}
+.menu a{
+    text-align: center;
+    text-decoration: none; 
+    margin-top: 0px;
+    font-size: 30px;
+    margin-left: 220px;
+    color: pink;
+        
+}
+.mainfont{
+    white-space: normal;
+    width: 485px;  
+    height: 63px;
+   
+}
+p.mainfont{
+    margin-left: 700px;
+    
+}
+
+.subimg1{width: 400px;
+    height: 400px;
+    margin-left: 250px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+.subimg2{width: 400px;
+    height: 400px;
+    margin-left: 250px;
+    margin-top: 400px;
+}
+.subfont1{
+    width: 640px;
+    height: 50px;
+    margin-top: -530px;
+    margin-left: 900px;
+    font-weight: 500;
+    font-size: larger;
+}
+.subfont2{
+    width: 640px;
+    height: 50px;
+    margin-top: -260px;
+    margin-left: 900px;
+    font-weight: 500;
+    font-size: larger;
+}
+footer{
+    width: 100%;
+    height: 90px;
+    background-color: #ecc2b4;
+    text-align: center;
+    margin-top: 450px;
+    padding-right: 2%;
+    margin-bottom: -30px;
+    
+}
+a:hover{
+    color: black ;
+}
+

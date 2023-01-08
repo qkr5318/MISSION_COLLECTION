@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+/* ttf 형식으로 font 적용 */
+@font-face {
+	font-family: "Birds";
+	src: url("../resources/font/birds_of_paradise/Birds\ of\ Paradise\ _PERSONAL\ USE\ ONLY.ttf")
+		format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Cafe24Oneprettynight";
+	src: url("../resources/font/Cafe24Oneprettynight/Cafe24Oneprettynight.ttf")
+		format("truetype");
+}
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Cafe24Oneprettynight";
+	font-weight: bold;
+	font-size: 18px;
+}
+/* fade in 애니메이션 추가 */
+.fade-in1 {
+	-webkit-animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+	animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+@-webkit-keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.vegas_text {
+	position: absolute;
+	left: 20%;
+	bottom: 30%;
+	background-color: rgba(255, 255, 255, 0.61);
+	height: 200px;
+	width: 400px;
+	text-align: center;
+	font-family: "Birds";
+	margin: 0 auto;
+	border-radius: 10px;
+	padding: 20px;
+	z-index: -1;
+}
+.vegas_text p {
+	margin: 28px;
+	font-size: 20px;
+	color: rgb(99, 99, 99);
+}
+/* font-awesome 영역 색상 변경 */
+.vegas_text a {
+	color: rgb(99, 99, 99);
+}
+
+/* font-awesome 영역 hover 시 색상 변경 */
+.vegas_text a :hover {
+	color: rgb(253, 128, 128);
+}
+
+.fas {
+	margin-right: -90%;
+}
+
+/* vegas_wrap, text, fas max-width : 767px 시 미디어쿼리 적용 */
+
+@media (max-width: 767px) {
+	.vegas_wrap {
+		position: relative;
+	}
+	.vegas_text {
+		text-align: center;
+		height: 250px;
+		width: 300px;
+		position: absolute;
+		top: 50%;
+		left: 12%;
+		margin-top: 70px;
+	}
+	.fas {
+		margin-right: -90%;
+		margin-bottom: 50%;
+	}
+}
+
+.navbar-brand {
+	z-index: 10 !important;
+}
+
+/* 상단바 brand 텍스트 색상 변경 */
+.navbar-default .navbar-brand {
+	color: rgb(252, 97, 97) !important;
+}
+
+/* brand 텍스트 hover 색상변경 */
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+	color: rgb(255, 172, 172) !important;
+	background-color: transparent;
+}
+
+/* 상단바 텍스트 색상변경 */
+.navbar-default .navbar-nav > li > a {
+	color: rgb(85, 84, 84) !important;
+}
+
+/* 상단바 텍스트 hober 시 색상변경 */
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+	color: rgb(236, 70, 70) !important;
+	background-color: transparent;
+}
+
+/* 상단바 클릭 상태에서 변경되어있는 텍스트 색상 */
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+	color: rgb(134, 134, 134) !important;
+	background-color: #e7e7e7;
+}
+/* dropdown-menu 에 hover 색상변경 */
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+	color: rgb(236, 70, 70) !important;
+	background-color: transparent;
+}
+/* max-width:767px 시 미디어쿼리 적용 */
+
+@media (max-width: 767px) {
+	/* dropdown-menu 에 li a 색상변경 */
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+		color: rgb(0, 0, 0) !important;
+	}
+	/* dropdown-menu 에 hover 색상변경 */
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+		color: rgb(236, 70, 70) !important;
+		background-color: transparent;
+	}
+}
+
+/* navber opacity 추가 */
+.container > .navbar-header,
+.container-fluid > .navbar-header,
+.container > .navbar-collapse,
+.container-fluid > .navbar-collapse {
+	margin-right: -15px;
+	margin-left: -15px;
+	opacity: 1;
+}
+
+.nav {
+	opacity: 0.8;
+}

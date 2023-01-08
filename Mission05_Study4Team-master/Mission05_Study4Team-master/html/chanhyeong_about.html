@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Site Information</title>
+        
+        
+        <!-- 합쳐지고 최소화된 최신 CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        
+        <!-- 부가적인 테마 -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+        
+        
+        <link rel="stylesheet" type="text/css" href="../css/chanhyeong_about.css">
+        
+        <script type="text/javascript" src="../javascript/bootstrap.js"></script>
+        
+
+        
+        
+        
+    </head>
+    <div id="body-wrapper">
+        <div id="body-content">
+    
+    <a href="#"> <img src="../resources/images/pch_logo.png" alt="로고" style="margin: 10px 0 0 20px;"></a>
+    <nav>
+        <ul class="menu">
+            <li><a href="#">게임소개</a></li>
+            <li><a href="#">캐릭터</a></li>
+            <li><a href="#">커뮤니티</a></li>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">다운로드</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">게임시작</a></li>
+        </ul>
+    </nav>
+   
+    <body>
+        
+        <!-- Single button -->
+        <div class="btn-group">
+            <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                회사 소개 <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <a href="../html/chanhyeong_tubular.html" class="video" target="_blank">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 영상보기 !!</a>
+                <a href="#"><div class="wrap">
+                    <a href="#pop_info_1" class="btn_open">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 글로읽기 !!</a>
+                    <div id="pop_info_1" class="pop_wrap" style="display:none;">
+                        <div class="pop_inner">
+                            <p class="dsc">저희 <span class="CodInG" style="color: pink"> CodInG ^~^</span>는 제가 개발자의 꿈을 가졌을 때를 회상하며 만든 사이트입니다. 그 때보다 훨씬 좋아진 환경과 그에 비례해서 부쩍 늘어난 개발자 유망주들의 꿈을 포기하지 않고 조금 더 빨리, 재밌게 가질 수 <br> 있도록 노력하는<span class="CodIng" style="color: pink"> CodIng ^~^/</span>가 되겠습니다. 감사합니다.
+                          </p>
+                            <button type="button" class="btn_close">닫기</button>
+                        </div>
+                    </div></a>
+            </ul>
+        </div>
+    </div>
+
+        <script>
+            var target = document.querySelectorAll('.btn_open');
+            var btnPopClose = document.querySelectorAll('.pop_wrap .btn_close');
+            var targetID;
+            
+            // 팝업 열기
+            for(var i = 0; i < target.length; i++){
+                target[i].addEventListener('click', function(){
+                    targetID = this.getAttribute('href');
+                document.querySelector(targetID).style.display = 'block';
+            });
+        }
+        
+            // 팝업 닫기
+            for(var j = 0; j < target.length; j++){
+                btnPopClose[j].addEventListener('click', function(){
+                    this.parentNode.parentNode.style.display = 'none';
+            });
+        }
+        </script>
+        
+        
+        <script src="../javascript/jquery-3.3.1.js"></script>
+        
+        <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <div class="cjp">
+            <img src="../resources/images/css.svg" style="width: 100px" alt="CSS"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <img src="../resources/images/java.svg" style="width: 100px" alt="JAVA"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <img src="../resources/images/python.svg" alt="PYTHON">
+            <br>
+
+        <br>
+        </div>
+        <footer>
+            <h2>TEL : 010 - 0100 - 0010 <br> PAX : 1234-4321</h2>
+              <address>주소 : 서울시 구로구 경인로 557 신한은행 건물 4층 <br> 대표 : 박자바 <br> e-mail : HtmlCssJavaPython@gmail.com</address>
+        
+          </footer>  
+        </div>
+        
+    </body>
+    </html>

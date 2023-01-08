@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>미생(美生) FAQ</title>
+
+		<link rel="stylesheet" href="../css/yuna_bootstrap.css" />
+		<link rel="stylesheet" href="../css/yuna.css" />
+
+		<!-- 합쳐지고 최소화된 최신 CSS -->
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
+		/>
+
+		<!-- 부가적인 테마 -->
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"
+		/>
+
+		<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+		<script src="../javascript/yuna.js"></script>
+
+		<!-- font-awesome.css 추가 -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+		/>
+	</head>
+	<body>
+		<!-- nav 영역 -->
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button
+						type="button"
+						class="navbar-toggle collapsed"
+						data-toggle="collapse"
+						data-target="#bs-example-navbar-collapse-1"
+					>
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Beautiful Life</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a
+								href="#"
+								class="dropdown-toggle"
+								data-toggle="dropdown"
+								role="button"
+								aria-expanded="false"
+								>회사소개 <span class="caret"></span
+							></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">회사소개</a></li>
+								<li><a href="#" target="_blank">영상</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a
+								href="#"
+								class="dropdown-toggle"
+								data-toggle="dropdown"
+								role="button"
+								aria-expanded="false"
+								>베스트 <span class="caret"></span
+							></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">베스트</a></li>
+								<li><a href="#">신제품</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a
+								href="#"
+								class="dropdown-toggle"
+								data-toggle="dropdown"
+								role="button"
+								aria-expanded="false"
+								>웨딩 <span class="caret"></span
+							></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">프로포즈</a></li>
+								<li><a href="#">웨딩부케</a></li>
+								<li><a href="#">축하화환</a></li>
+								<li class="divider"></li>
+								<li><a href="#">신제품</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a
+								href="#"
+								class="dropdown-toggle"
+								data-toggle="dropdown"
+								role="button"
+								aria-expanded="false"
+								>근조화환 <span class="caret"></span
+							></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">1단화환</a></li>
+								<li><a href="#">2단화환</a></li>
+								<li><a href="#">3단화환</a></li>
+								<li class="divider"></li>
+								<li><a href="#">신제품</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a
+								href="#"
+								class="dropdown-toggle"
+								data-toggle="dropdown"
+								role="button"
+								aria-expanded="false"
+								>고객센터 <span class="caret"></span
+							></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="yuna_FAQ.html">fAQ</a></li>
+								<li><a href="#">1:1문의게시판</a></li>
+								<li><a href="#">오시는길</a></li>
+							</ul>
+						</li>
+					</ul>
+					<form class="navbar-form navbar-right" role="search">
+						<div class="form-group">
+							<input
+								type="text"
+								class="form-control"
+								placeholder="상품을 검색하세요"
+							/>
+						</div>
+						<!-- 검색창 이미지 -->
+						<button type="submit" class="btn btn-default">
+							<img src="../resources/images/yuna_search.svg" alt="검색이미지" />
+						</button>
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">로그인</a></li>
+						<li><a href="#">회원가입</a></li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+		<!-- <div class="focus-in-contract">
+			<h1>F&nbsp;A&nbsp;Q&nbsp;</h1>
+		</div> -->
+
+		<!-- body 동영상 영역 -->
+		<div class="top-box">
+			<video muted autoplay loop>
+				<source src="../resources/videos/yuna_f.mp4" type="video/mp4" />
+			</video>
+		</div>
+
+		<div class="faq">
+			<h2>FAQ</h2>
+		</div>
+		<div class="faq_list">
+			<ul>
+				<li>
+					<p class="list_number">제작</p>
+				</li>
+				<li>
+					<p>
+						<button><span>Q. </span>제작기간은 얼마나 소요되나요?</button>
+					</p>
+					<div>
+						<div class="answer">
+							<span>A. </span>제작에는 약 2주가 소모됩니다. 다만, 꼭 필요하신
+							날짜가 있다면 약간의 조정이 가능합니다.
+						</div>
+					</div>
+				</li>
+				<li>
+					<p>
+						<button>
+							<span>Q. </span>기존의 디자인에서 변경하는 것이 가능한가요?
+						</button>
+					</p>
+					<div>
+						<div class="answer">
+							<span>A. </span>가능합니다. 주문제작탭에서 주문해주시면 됩니다.
+						</div>
+					</div>
+				</li>
+				<li>
+					<p>
+						<button><span>Q. </span>제작 시 꽃 원산지는 어딘가요?</button>
+					</p>
+					<div>
+						<div class="answer">
+							<span>A. </span>미생에서는 제작 시 들어가는 모든 꽃은 국내산으로
+							제작하고 있습니다.
+						</div>
+					</div>
+				</li>
+				<li>
+					<p class="list_number">배송</p>
+				</li>
+				<li>
+					<p>
+						<button><span>Q. </span>출고는 언제 되나요?</button>
+					</p>
+					<div>
+						<div class="answer">
+							<span>A. </span>영업일 기준, 오후 12시 이전 결제건에 한해 당일
+							제작이 들어가며, 당일 제작 기준으로 2주 후 출고됩니다.
+						</div>
+					</div>
+				</li>
+				<li>
+					<p>
+						<button><span>Q. </span>택배수령일을 선택 할 수 있나요?</button>
+					</p>
+					<div>
+						<div class="answer">
+							<span>A. </span>주문 시, 주문일을 기준으로 13일 이후부터 선택이
+							가능합니다.
+						</div>
+					</div>
+				</li>
+				<li>
+					<p>
+						<button><span>Q. </span>택배업체는 어떻게 되나요?</button>
+					</p>
+					<div>
+						<div class="answer">
+							<span>A. </span>택배업체는 yn통운을 이용합니다. <br />
+							yn통운 고객센터 : 1588-1234 <br />
+							yn통운 운송장 조회 :
+							<a href="#" style="text-decoration: none; color: #535353"
+								>https://www.yu.co.kr</a
+							>
+						</div>
+					</div>
+				</li>
+				<li>
+					<p>
+						<button>
+							<span>Q. </span>배송비는 어떻게 부과되나요?(도서산간 포함)
+						</button>
+					</p>
+					<div>
+						<div class="answer">
+							<span>A. </span>미생 홈페이지 내 제품 80,000원 이상 구매시
+							무료배송입니다. <br />
+							80,000 이하 구매시 배송비는 2,500원으로 책정됩니다. <br />
+							다만, 도서산간지역의 경우 추가운임비 4000원이 부과됩니다.
+						</div>
+					</div>
+				</li>
+				<li>
+					<p>
+						<button><span>Q. </span>배송지 변경이 가능한가요?</button>
+					</p>
+					<div>
+						<div class="answer">
+							<span>A. </span>배송지 변경은 "상품준비중" 상태에서만 가능하며,
+							배송지 변경을 원하실 경우 고객센터로 연락주시기 바랍니다. <br />
+							미생 고객센터 : 1234-1234
+						</div>
+					</div>
+				</li>
+				<li>
+					<p class="list_number">교환/환불</p>
+				</li>
+				<li>
+					<p>
+						<button><span>Q. </span>교환/환불이 가능할까요?</button>
+					</p>
+					<div>
+						<div class="answer">
+							<span>A. </span>수령하신 제품이 홈페이지에 표시,광고 내용과
+							다르거나 <br />주문제작시 다르게 이행 된 경우 공급받은 날로부터
+							3일이내, 교환과 반품이 가능합니다. <br />
+							제품의 특성상 고객님의 단순변심으로는 환불이 불가합니다. <br />
+						</div>
+					</div>
+				</li>
+				<li>
+					<p class="list_number">결제</p>
+				</li>
+				<li>
+					<p>
+						<button><span>Q. </span>비회원 구매가 가능할까요?</button>
+					</p>
+					<div>
+						<div class="answer">
+							<span>A. </span>비회원 구매가 가능합니다. <br />
+							비회원으로 구매시 주문조회는 주문번호 기준으로 가능하오니 반드시
+							메모 해두시기 바랍니다.
+						</div>
+					</div>
+				</li>
+				<li>
+					<p>
+						<button><span>Q. </span>무통장입금이 확인이 안돼요.</button>
+					</p>
+					<div>
+						<div class="answer">
+							<span>A. </span>미생의 경우 무통장입금 자동확인 시스템을 이용하고
+							있습니다. <br />
+							주문자명과 입금자명이 일치하다면 주문확인이 바로 되지만, <br />
+							입금자명이 다를경우 1:1문의 게시판 등을 통해서 별도로
+							요청해주셔야합니다.
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="ft_info_wrap">
+			<div class="ft_info">
+				<dl>
+					<dt>(주)미생</dt>
+					<dd>
+						고객센터 :
+						<a href="#">1234-1234</a>
+					</dd>
+					<dd>
+						이메일 :
+						<a href="#">beautifulife@gamil.com</a>
+					</dd>
+					<dd>대표자명 : 최나유</dd>
+					<dd>사업자등록번호 : 123-12-1234</dd>
+					<dd>위치 : 인생시 시작구 빛날동12</dd>
+					<!-- fortawesome 적용 -->
+					<i class="fab fa-youtube"></i>
+					<span><a href="#" target="_blank">미생 영상보러가기</a></span>
+				</dl>
+			</div>
+		</div>
+	</body>
+</html>

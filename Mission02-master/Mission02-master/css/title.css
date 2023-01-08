@@ -1,0 +1,77 @@
+.title {
+  display: inline-block;
+  background-color: gray;
+  width: 150px;
+  height: 80px;
+  text-align: center;
+  color: white;
+  border: 1px solid gray;
+  vertical-align: middle;
+  line-height: 80px;
+  margin: 0px;
+  padding: 0px;
+}
+
+th {
+  width: 150px;
+  height: 80px;
+}
+
+.final {
+  position: absolute;
+  left: 800px;
+  margin-top: 22px;
+  width: 500px;
+  height: 200px;
+}
+
+.uniq {
+  color: red;
+}
+
+fieldset {
+  padding: 0px;
+  background-color: antiquewhite;
+}
+
+td {
+  height: 82px;
+  width: 300px;
+}
+
+.final1 {
+  width: 150px;
+  height: 40px;
+  font-size: 20px;
+  background-color: #eac1bf;
+}
+
+.final2 {
+  width: 150px;
+  height: 40px;
+  font-size: 20px;
+  background-color: #eac1bf;
+}
+
+#balloon1 {
+  display: inline-block;
+  position: absolute;
+  margin-top: 10px;
+}
+
+#balloon2 {
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  left: 1800px;
+}
+
+h1 {
+  height: 100px;
+}
+
+#top {
+  position: relative;
+}
+
+/*# sourceMappingURL=title.css.map */

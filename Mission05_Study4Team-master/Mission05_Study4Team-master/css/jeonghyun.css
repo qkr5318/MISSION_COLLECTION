@@ -1,0 +1,87 @@
+
+        @font-face{
+            font-family: 'RidiBatang';
+            src: url(../resources/font/RIDIBatang.otf) format(opentype);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'RidiBatang';
+            list-style: none;
+        }
+        
+        .navbar-brand{
+            font-weight: bold !important;
+        }
+        .bg-light{
+            background-color: #C4C8D5 !important;
+        }
+        .dropdown-menu{
+          
+          z-index:101 !important;
+        }
+        .dropdown > a{
+          font-size: 17px;
+
+        }
+
+        .dropdown-menu{
+            background-color: #C4C8D5 !important;
+            font-size: 16px !important;
+            opacity: 0.9;
+            border:1px solid #000;
+        }
+    
+        /* .dropdown-item{
+            font-size: 17px;
+        } */
+        .dropdown-item:hover{
+            background-color:  #babdc7 !important;
+            font-weight: bold !important;
+        }
+   
+        .nav-link:hover{
+            font-weight: bold !important;
+        }
+        .jfur{
+            color: rgba(0, 0, 0, 1);
+            font-family: 'Times New Roman', Times, serif;
+            position: relative ;
+            z-index: 100;
+        }
+      
+
+        @media (min-width: 768px) {
+            .navbar {
+             border-radius: 0px !important;
+            }
+        }
+
+        @media (min-width: 1200px) {
+           #about {
+             right: -10%;
+           }
+           html{
+            overflow-x: hidden;
+           }
+        }
+        .location_text::before,
+        .location_text::after {
+        content: "";
+        flex-grow: 1;
+        background: rgba(0, 0, 0, 0.979);
+        height: 1px;
+        font-size: 0px;
+        line-height: 0px;
+        margin: 0px 16px;
+        }
+
+        svg{
+          width: 20px;  
+          right: 30px;
+          bottom: 60px;
+        }
+
+        footer{
+          bottom: 0;
+        }

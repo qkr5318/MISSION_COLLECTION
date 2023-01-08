@@ -1,0 +1,52 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  height: 100%;
+}
+
+#top_menu {
+  top: 20px;
+  right: 80px;
+  color: white;
+}
+
+#top_menu a {
+  color: white;
+}
+
+.menu {
+  display: inline;
+  display: flex;
+  display: -webkit-box;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+}
+
+.menu a {
+  text-align: center;
+  text-decoration: none;
+  margin-top: 0px;
+  font-size: 30px;
+  margin-left: 220px;
+  color: pink;
+}
+
+a:hover {
+  color: black;
+}
+
+.Hfont {
+  font-family: "Anton&display";
+  text-align: center;
+}
+
+/*# sourceMappingURL=header.css.map */

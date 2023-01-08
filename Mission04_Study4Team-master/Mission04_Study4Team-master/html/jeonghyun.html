@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J.Furniture</title>
+    <link rel="icon" href="../resources/images/jh_icon.png">
+    <link rel="stylesheet"  type="text/css" href="../css/jeonghyun.css">
+    <script src="../javascript/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a7d21a87aeee04ff289c689951c65323"></script>
+</head>
+<body>
+    <div class="topMenuBar">
+        <ul class="htopMenuBar_">
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">관심상품</a></li>
+            <li><a href="#">고객지원</a></li>
+            <li>&nbsp;&nbsp;<input type="text" placeholder="검색어를 입력하세요"><a href="#">&nbsp;&nbsp;   검색</a></li>
+        </ul>
+    </div>
+    <div class="head"><a href="#"><p>J.FURNITURE</p></a></div>
+    <div class="menu">  
+        <ul class="navi">
+            <li><a href="#">침실가구</a>
+                <ul class="submenu">
+                    <li><a href="#">침대</a></li>
+                    <li><a href="#">매트리스</a></li>
+                    <li><a href="#">장롱</a></li>
+                    <li><a href="#">수납가구</a></li>
+                </ul>
+            </li>
+            <li><a href="#">거실가구</a>
+                <ul class="submenu">
+                    <li><a href="#">가죽소파</a></li>
+                    <li><a href="#">패브릭소파</a></li>
+                    <li><a href="#">거실장</a></li>
+                    <li><a href="#">거실테이블</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="#">주방가구</a>
+                <ul class="submenu">
+                    <li><a href="#">원목식탁</a></li>
+                    <li><a href="#">세라믹식탁</a></li>
+                    <li><a href="#">식탁의자</a></li>
+           
+                </ul>
+            </li>
+            <li><a href="#">아동가구</a>
+                <ul class="submenu">
+                    <li><a href="#">아동침대</a></li>
+                    <li><a href="#">책상/책장</a></li>
+                    <li><a href="#">의자</a></li>
+                    <li><a href="#">수납가구</a></li>
+                </ul>
+            </li>
+            <li><a href="#">사무용가구</a>
+                <ul class="submenu">
+                    <li><a href="#">책상</a></li>
+                    <li><a href="#">의자</a></li>
+                    <li><a href="#">파티션</a></li>
+                    <li><a href="#">수납가구</a></li>
+                </ul>
+            </li>
+            <li><a href="#">기타용품</a></li>
+            <li><a href="#">고객지원</a>
+                <ul class="submenu"> 
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">찾아오시는 길</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!--head----------------------------------------------------->
+    
+    <div class="direction">
+        <div class="dbody">
+            <div class="dtitle">찾아오시는 길</div><br>
+            <div class="dsection"> 
+                <div class="location">
+                    <div id="map" style="width:100%;height:550px;"></div>
+                   
+                </div>
+             </div>  
+             <h2 class="adress_name">주소</h2><br>
+             <div class="adtext">서울시 구로구 경인로 557 5층 J.FURNITURE 사무실 </div><br>
+            
+             <p class="subway"><?xml version="1.0" ?><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><title/><g id="Train"><path d="M406.0981,370V85.0928a55.2568,55.2568,0,0,0-55.1909-55.1909H161.0928a55.2568,55.2568,0,0,0-55.1909,55.1909V370A17.0965,17.0965,0,0,0,123,387.0981h26.7964l-41.4639,69.107a17.1022,17.1022,0,0,0,29.335,17.59l52.018-86.6968h132.629l52.018,86.6968a17.1022,17.1022,0,1,0,29.335-17.59l-41.4639-69.107H389A17.0965,17.0965,0,0,0,406.0981,370ZM180.0035,341.5a28.5,28.5,0,1,1,28.5-28.5A28.4992,28.4992,0,0,1,180.0035,341.5Zm152,0a28.5,28.5,0,1,1,28.5-28.5A28.4992,28.4992,0,0,1,332.0035,341.5Zm39.8984-102.5981H140.0981V121.0981H371.9019Z"></g></svg></p><h3 class="subway_t">지하철</h3><br>
+                구로역 3번출구로 나온 후 구로역광장 대각선 건너편 신한은행 방면으로 도보 3분 소요 
+            <p class="bus"><?xml version="1.0" ?><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M488 128h-8V80c0-44.8-99.2-80-224-80S32 35.2 32 80v48h-8c-13.25 0-24 10.74-24 24v80c0 13.25 10.75 24 24 24h8v160c0 17.67 14.33 32 32 32v32c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-32h192v32c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-32h6.4c16 0 25.6-12.8 25.6-25.6V256h8c13.25 0 24-10.75 24-24v-80c0-13.26-10.75-24-24-24zM112 400c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32zm16-112c-17.67 0-32-14.33-32-32V128c0-17.67 14.33-32 32-32h256c17.67 0 32 14.33 32 32v128c0 17.67-14.33 32-32 32H128zm272 112c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32z"/></svg></p><h3 class="bus_t">버스</h3><br>
+                정류장 -구로역.구로기계공구상가 에서 하차 후 구로역 사거리 방면 1분 도보 이동 신한은행 건물<br><br><br><br><br>
+        
+
+        </div>
+    </div>
+ 
+
+    <!--footer----------------------------------------------------->
+    
+    <div class="footer">
+        <table class="table3">
+            <tr class="tr3">
+                <td><img src="../resources/images/jh_Jfurniture.png" alt="로고이미지" width="150px"></td>
+                <td colspan="2"></td>
+            </tr>
+            <tr class="tr3">
+                <td>서울시 구로구 경인로 557 5층 J.FURNITURE </td>
+                <td>고객상담: 09:00 ~ 18:00(평일)</td>
+                <td>고객상담 센터 : 국번없이 1234-5678</td>
+                
+            </tr>
+            <tr class="tr3">
+                <td style="font-size:20px ; font-weight: bold;">대표번호 : 1234-5678</td>
+                <td>팩스번호 : 0101-1011-0010</td>
+                <td>Copyright ⓒ J.FURNITURE HAPPYRESTTIME HAVE A GOOD TIME SERVICE. </td>
+            </tr>
+        </table>
+    </div>
+    <script src="../javascript/jeonghyun.js"></script>
+</body>
+</html>

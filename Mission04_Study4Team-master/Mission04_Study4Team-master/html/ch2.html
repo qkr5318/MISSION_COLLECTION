@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하이구로종합복지관</title>
+    <link rel="stylesheet" href="../css/ch2.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="../javascript/ch22.js"></script>
+
+    
+</head>
+<body>
+    
+    <div id="page">
+ 
+        <header>
+            <div id="logo">
+                <img src="../resources/images/ch2_main_logo.png" alt="Logo">
+            </div>
+ 
+            <div id="top_menu">
+                <a href="#">HOME</a> | 
+                <a href="#">로그인</a> |
+                <a href="#">회원가입</a> |
+                <a href="#">후원문의</a>
+               
+            </div>
+ 
+            
+            <nav>
+                <ul>
+                    <li><a href="#">복지관 소개</a></li>
+                    <li><a href="#">알림마당</a></li>
+                    <li><a href="#">커뮤니티</a></li>
+                    <li><a href="#">봉사활동</a></li>
+                    <li><a href="#">이용문의</a></li>
+                    <li><a href="#">함께하는 단체들</a></li>
+                </ul>
+            </nav>
+        </header>
+      </nav>
+        </header>
+    
+<!-- 상단 페이지 끝-->
+
+<img src="../resources/images/ch2_first.jpg" class="naver">
+<hr>
+
+
+
+
+<br>
+<div style="text-align: center;">홈 > 복지관 소개 > 찾아오시는 길</div>
+<h2 style="text-align: center;">찾아오시는 길</h2><br><hr>
+
+
+        <body>
+            <div id="map"></div>
+
+            <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=514f3364a49f9f5c6be6881e31ff6ade"></script>
+            <script>
+            var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+                mapOption = { 
+                    center: new kakao.maps.LatLng(37.50322555401352,126.87896630420589), // 지도의 중심좌표
+                    level: 3 // 지도의 확대 레벨
+                };
+            
+            var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+            
+            // 마커가 표시될 위치입니다 
+            var markerPosition  = new kakao.maps.LatLng(37.50322555401352,126.87896630420589); 
+            
+            // 마커를 생성합니다
+            var marker = new kakao.maps.Marker({
+                position: markerPosition
+            });
+            
+            // 마커가 지도 위에 표시되도록 설정합니다
+            marker.setMap(map);
+            
+            // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+            // marker.setMap(null);    
+            </script>
+
+            <div class="bigmap">
+            <a href="https://map.kakao.com/?urlX=473250&urlY=1112170&urlLevel=3&map_type=TYPE_MAP&map_hybrid=false">▶지도 확대 및 길찾기 기능 이용하기◀</a>  </div>
+<br><hr>
+            <img src="../resources/images/ch2_center.jpg" class="centerimg">
+           <br>
+           
+            <div class="outimg">
+                복지관 외부 사진
+            </div>
+        
+
+
+
+            </body>
+            
+            
+            
+                <!-- 찾아오는길 시작 -->
+      <br>
+    <p class="bus"> 대중교통에 의한 전동휠체어 이용시</p>
+    1호선 구로역 1번출구 하차 후 약 10분
+    구로역 (NC백화점) 구로9번, 5630버스 하차 후 약 10분
+    <p class="subway">대중교통 이용에 의한 도보시</p>
+    1호선 구로역(NC백화점) 하차후 마을버스09 탑승. 구로역,구로기계상가 정류장 하차
+    <br>
+    <br>
+    <div class="call">
+    주소 : 서울특별시 구로구 경인로 557 신한은행 건물 4층<br>
+            팩스 070-8455-5768  이메일 chaei9803@naver.com <br>
+    문의시간 : 월~금(9:00~18:00)
+    </div>
+    </p>
+    <!-- 찾아오는길 끝 -->
+ 
+        <footer>
+            <img src="../resources/images/ch2_footer2.png" alt="address">
+        </footer>
+ 
+    
+</body>
+</html>

@@ -1,0 +1,82 @@
+@charset "utf=8";
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Nanum+Gothic:wght@700&family=Vollkorn:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Lobster&family=Nanum+Gothic:wght@700&family=Noto+Serif+KR:wght@300&family=Vollkorn:ital,wght@1,500&display=swap');
+
+body{
+    background: linear-gradient(rgb(255, 254, 255), rgb(255 184 218));
+    margin: 0 auto; padding: 0 auto;
+    overflow-x: hidden;
+    
+}
+
+header{
+    margin: -8px;
+    height: 60px;
+    padding: 1rem;
+    color: #8d8d8d;
+    background: #ff87e047;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Noto Serif KR', serif;
+    width: 1900px;
+}
+header h1 a{text-decoration: none; color: #8d8d8d;}
+header h1{margin: 0; padding:20px;}
+header h1 a:hover{color: black;}
+.menu span{margin: 30px; padding: 20px; font-size: 23px; text-align: center; cursor: pointer;}
+.info span{padding: 10px; font-size: 20px; margin-right: 18px; cursor: pointer; }
+#gallery{width: 630px; height: 350px; margin: 0 auto; overflow: hidden;}
+.slide_gallery li img{margin: 0 auto; display: block; padding: 40px; position: relative;}
+.slide_gallery li {list-style: none;}
+.faq h2{font-family: 'Noto Serif KR', serif;
+    margin-left: 18%; 
+    margin-top: 50px; 
+    padding: 1px; color: #535353;}
+.faq_list{
+    border:2px dotted rgb(175, 175, 175);
+    background-color:rgba(255, 255, 255, 0.568);
+    color:inherit;
+    padding:10px;
+    font-family: 'Noto Serif KR', serif;
+    margin: 0 auto;
+    width: 1200px;
+    height: 1100px;
+    /* text-align: center; */
+}
+.list_number {font-size: 20px; font-weight: bold;
+   display: inline-block; background: #ff87e047; width: 100px; height: 40px; 
+   text-align: center; line-height: 40px; border-radius: 20%;
+}
+
+.faq_list > ul > li{list-style: none;}
+button {
+    cursor:pointer;
+}
+button > span{font-weight: bold; color: rgb(245, 88, 114);}
+.answer > span{font-weight: bold; color: rgb(245, 88, 114);}
+.answer{line-height:30px }
+
+
+button{height: 40px; border: none; border-bottom: 2px solid pink;
+    font-family: 'Noto Serif KR', serif; font-size: 18px; background: rgba(255, 255, 255, 0.151);} 
+button:hover{font-weight: bold; color: rgb(250, 144, 162);}
+
+footer{
+    height: 60px;
+    padding: 1rem;
+    color: #8d8d8d;
+    font-weight: bold;
+    font-family: 'Noto Serif KR', serif;
+    text-align: center;
+}
+footer > span > a{
+    padding: 50px;
+    text-decoration: none;
+    color: #535353;
+}
+
+footer > span > a:hover{
+    color: black;
+}

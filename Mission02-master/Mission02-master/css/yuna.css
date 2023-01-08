@@ -1,0 +1,92 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Nanum+Gothic:wght@700&family=Vollkorn:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Lobster&family=Nanum+Gothic:wght@700&family=Noto+Serif+KR:wght@300&family=Vollkorn:ital,wght@1,500&display=swap");
+html {
+    overflow-x: hidden;
+    }
+body {
+    margin: 0 auto;
+    padding: 0 auto;
+	font-family: "Vollkorn", serif;
+	background-image: url(../resources/images/back_img.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	}
+
+.title h2 {
+	margin: 0 auto;
+	padding: 30px;
+	text-align: center;
+	margin: 50px 0 50px 0;
+	height: 38px;
+	padding: 1rem;
+	background: #fcbcebbd;
+	color: #616060cc;
+	font-size: 30px;
+	}
+.required_form {
+    border: 3px dashed rgb(255, 255, 255);
+    background-color: #ffffff81;
+    margin: 30px;
+    padding: 30px;
+	}
+legend {
+    font-size: 25px;
+    font-weight: bold;
+	margin: 20px;
+	color: rgb(255, 255, 255);
+	background-color: #ffbfea98;
+	}
+.list_required li {
+	display: table;
+	height: 35px;
+	}
+.choice_form {
+	border: 3px dashed rgb(255, 255, 255);
+	background-color: #ffffff81;
+	margin: 30px;
+	padding: 30px;
+	}
+.list_choice li {
+	display: table;
+	height: 35px;
+	}
+.age {
+	display: inline-block;
+	border-bottom: 2px solid gray;
+	color: rgb(112, 112, 112);
+	}
+.footer {
+	display: inline-block;
+	border-bottom: 2px solid gray;
+	color: rgb(112, 112, 112);
+	}
+.join input {
+	background-color: rgba(255, 209, 209, 0.788);
+	border: 2px solid #ffcdcd81;
+	width: 50%;
+	padding: 10px 20px;
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	justify-content: center;
+	margin: auto;
+	font-family: "Vollkorn", serif;
+	}
+.reset input {
+	background-color: rgba(255, 209, 209, 0.788);
+	border: 2px solid #ffcdcd81;
+	width: 50%;
+	padding: 10px 20px;
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	justify-content: center;
+	margin: auto;
+	font-family: "Vollkorn", serif;
+	}
+			
+			
+
+
+			

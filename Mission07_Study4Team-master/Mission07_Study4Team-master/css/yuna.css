@@ -1,0 +1,295 @@
+@charset "utf-8";
+
+/* ttf 형식으로 font 적용 */
+@font-face {
+	font-family: "Birds";
+	src: url("../font/birds_of_paradise/Birds\ of\ Paradise\ _PERSONAL\ USE\ ONLY.ttf")
+		format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Cafe24Oneprettynight";
+	src: url("../font/Cafe24Oneprettynight/Cafe24Oneprettynight.ttf")
+		format("truetype");
+}
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Cafe24Oneprettynight";
+	font-weight: bold;
+	font-size: 18px;
+}
+body {
+	background-color: rgba(252, 253, 215, 0.37) !important;
+}
+
+/* pc 기준 */
+@media all and (min-width: 1024px) {
+	/* 영상 */
+	.top-box {
+		width: 100%;
+		height: 50%;
+		overflow: hidden;
+		margin: -20px auto;
+		position: relative;
+		z-index: -3;
+	}
+	video {
+		width: 100%;
+	}
+
+	.faq h2 {
+		font-family: "Noto Serif KR", serif;
+		font-size: 38px;
+		margin-top: 5%;
+		margin-bottom: 20px;
+		text-align: center;
+		padding-top: 30px;
+
+		color: #535353;
+	}
+
+	.faq_list {
+		border: 2px dotted rgb(175, 175, 175);
+		background-color: rgba(255, 255, 255, 0.568);
+		color: inherit;
+		padding: 10px;
+		font-family: "Noto Serif KR", serif;
+		margin: 0 auto;
+		width: 1200px;
+		height: 1300px;
+	}
+
+	button {
+		cursor: pointer;
+		font-size: 19px !important;
+	}
+	.answer {
+		line-height: 30px;
+		color: rgb(0, 0, 0);
+		padding: 20px 0;
+		text-indent: 1em;
+	}
+	.faq_list ul {
+		margin-left: 50px;
+	}
+}
+
+/* 테블릿 기준 */
+@media (min-width: 768px) and (max-width: 1023px) {
+	/* 영상 */
+	.top-box {
+		width: 100%;
+		height: 50%;
+		overflow: hidden;
+		margin: -20px auto;
+		position: relative;
+		z-index: -3;
+	}
+	video {
+		width: 100%;
+	}
+
+	.faq h2 {
+		font-family: "Noto Serif KR", serif;
+		font-size: 38px;
+		margin-top: 5%;
+		margin-bottom: 20px;
+		text-align: center;
+		padding-top: 30px;
+
+		color: #535353;
+	}
+
+	.faq_list {
+		border: 2px dotted rgb(175, 175, 175);
+		background-color: rgba(255, 255, 255, 0.568);
+		color: inherit;
+		padding: 10px;
+		font-family: "Noto Serif KR", serif;
+		margin: 0 auto;
+		width: 80%;
+
+		height: 1300px;
+	}
+	button {
+		cursor: pointer;
+		font-size: 19px !important;
+	}
+	.answer {
+		line-height: 30px;
+		color: rgb(0, 0, 0);
+		padding: 20px 0;
+		text-indent: 1em;
+	}
+	.faq_list ul {
+		margin-left: 50px;
+	}
+}
+/* 모바일기준 */
+@media all and (max-width: 767px) {
+	/* 영상 */
+	.top-box {
+		width: 100%;
+		height: 50%;
+		overflow: hidden;
+		margin: -20px auto;
+		position: relative;
+		z-index: -3;
+	}
+	video {
+		width: 100%;
+	}
+	.faq h2 {
+		font-family: "Noto Serif KR", serif;
+		font-size: 38px;
+		margin-top: 5%;
+		margin-bottom: 20px;
+		text-align: center;
+		padding-top: 30px;
+
+		color: #535353;
+	}
+
+	.faq_list {
+		border: 2px dotted rgb(175, 175, 175);
+		background-color: rgba(255, 255, 255, 0.568);
+		color: inherit;
+		padding: 10px;
+		font-family: "Noto Serif KR", serif;
+		margin: 0 auto;
+		width: 80%;
+		height: 1300px;
+	}
+	button {
+		cursor: pointer;
+		font-size: 16px !important;
+	}
+	.answer {
+		line-height: 30px;
+		color: rgb(0, 0, 0);
+		padding: 20px 0;
+		text-indent: 1em;
+		font-size: 15px;
+	}
+	.faq_list ul {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+}
+
+.list_number {
+	font-size: 20px;
+	font-weight: bold;
+	display: inline-block;
+	background: #20deff47;
+	width: 100px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 20%;
+	margin: 30px 10px 50px 10px;
+}
+
+.faq_list > ul > li {
+	list-style: none;
+}
+
+button > span {
+	font-weight: bold;
+	color: rgb(245, 88, 114);
+}
+.answer > span {
+	font-weight: bold;
+	color: rgb(245, 88, 114);
+}
+
+button {
+	height: 40px;
+	border: none;
+	border-bottom: 2px solid pink;
+	background: rgba(255, 255, 255, 0.151);
+}
+button:hover {
+	font-weight: bold;
+	color: rgb(250, 144, 162);
+}
+
+.ft_info_wrap {
+	background-color: #f4f4f4;
+	height: 300px;
+	margin-top: 50px;
+}
+
+.ft_info {
+	width: 500px;
+	margin: auto;
+	text-align: justify;
+	text-decoration: none;
+	padding-top: 50px;
+}
+
+.ft_info dt {
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 50px;
+}
+
+.ft_info dd {
+	margin-left: 33%;
+}
+
+.ft_info dd a {
+	color: rgb(94, 94, 94);
+}
+
+/* fontAwesome 적용 */
+.fab {
+	margin-left: 33%;
+	margin: 0 auto;
+	text-align: center;
+	padding-left: 33%;
+}
+
+.ft_info span a {
+	color: rgb(94, 94, 94);
+}
+
+/* .ft_info max-width :767px 미디어쿼리 적용 */
+
+@media (max-width: 767px) {
+	.ft_info {
+		width: 300px;
+		margin: auto;
+		text-align: justify;
+		text-decoration: none;
+		padding-top: 50px;
+	}
+
+	.ft_info dt {
+		text-align: center;
+		font-size: 18px;
+		font-weight: bold;
+		line-height: 50px;
+	}
+	.ft_info dd {
+		margin-left: 20%;
+		font-size: 13px;
+	}
+	.ft_info dd a {
+		font-size: 13px;
+	}
+
+	.fab {
+		margin-left: 33%;
+		margin: 0 auto;
+		text-align: center;
+		padding-left: 20%;
+	}
+	.ft_info span a {
+		font-size: 13px;
+	}
+}

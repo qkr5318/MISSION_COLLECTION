@@ -1,0 +1,181 @@
+
+
+
+/* 페이지 상단 부분 */
+*{margin: 0px; padding: 0px;}
+ul{list-style: none;} 
+a{text-decoration: none;} 
+ 
+header{
+    width: 1000px; 
+    height: 95px;
+    background-color: #69725a;
+    position: relative;
+}
+ 
+#logo{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+ 
+}
+ 
+
+#top_menu{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    color: white;
+}
+ 
+
+#top_menu a{color: white;}
+
+nav{
+    position: absolute;
+    bottom: 10px;
+    left: 220px;
+    font-size: 16px;
+}
+ 
+nav li{
+    display: inline;
+    margin-left: 30px;
+}
+ 
+nav li a{color: white;}
+
+#main img{
+    width: 1000px;
+    height: 95;
+}
+ 
+
+#content li{
+    display: inline;
+    margin-left: 50px;
+}
+
+a:link {color: white; text-decoration: none;}
+a:hover { text-decoration: underline;}
+
+nav li a:link {color: white; text-decoration: none;}
+nav li a:hover {color: yellowgreen;}
+
+
+
+
+footer{
+    width: 1000px; 
+    height: 95px;
+    margin-top: 20px;
+    text-align: center;
+}
+ 
+#page{width: 1000px; margin: 0px auto;}
+
+
+
+
+/* 회원가입
+
+body{background-color: #f7f7f7;}
+ul>li{list-style: none}
+a{text-decoration: none;}
+.clearfix::after{content: "";display: block;clear: both;}
+
+#joinForm{width: 460px;margin: 0 auto;}
+ul.join_box{border: 1px solid #ddd;background-color: beige;}
+
+.checkBox,.checkBox>ul{position: relative;}
+
+.checkBox>ul>li{float: left;}
+
+.checkBox>ul>li:first-child{width: 85%;padding: 15px;font-weight: 600;color: black}
+
+.checkBox>ul>li:nth-child(2){position: absolute;top: 50%;right: 30px;margin-top: -12px;}
+
+.checkBox textarea{width: 90%;height: 52px; margin: 0 2%;background-color: ivory;color: #888; border: none;} */
+
+/* FAQ */
+/* ul, li, p { list-style:none; padding:0; margin:0; }
+.listWrap { font-family:'Noto Sans KR', sans-serif; margin-bottom:20px; }
+.listWrap .qa_li { position:relative; display:block; padding:0; border-bottom:1px solid #ededed; cursor:pointer; }
+.listWrap .qa_li:first-child { border-top:1px solid #a6a6a6; }
+.listWrap .qa_li .ca_name { margin-bottom:14px; font-weight:400; color:#999;}
+.listWrap .qa_li .tit { color:#222;  transition:color 0.3s ease-out; }
+.listWrap .qa_li:hover .tit { color:#0a7ac8; }
+.qa_li .question { position:relative; display:block; padding:25px 100px 25px 120px; background:url(../resources/images/ch2_Q.png) 40px center no-repeat;}
+.qa_li .question .iconDiv { position:absolute; right:40px; top:50%; -webkit-transform:translateY(-50%); -moz-transform:translateY(-50%); -o-transform:translateY(-50%); -ms-transform:translateY(-50%); transform:translateY(-50%); }
+.qa_li .answer { position:relative; display:none; padding:40px 120px; font-size:16px; color:#222; line-height:28px; background:#f6f6f6 url(../resources/images/ch2_A.png) 40px 40px no-repeat; border-top:1px solid #e4e4e4; font-size: 15px;}
+.modA { position:absolute; right:30px; bottom:30px; color:#e82b2b; }
+
+.hifaq{
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;   }
+.FAQ2{
+    margin-left: 420px; }
+.FA{
+    text-align: center;
+    font-size: 16px;
+    color: gray;
+}
+
+#eheqhrl{
+border: 1px;
+} */
+
+
+.bus{
+    color: green;
+    font-weight: bold;
+}
+
+.subway{
+    color: green;
+    font-weight: bold;
+}
+
+.call{
+    color: gray;
+    font-size: small;
+}
+
+.naver{
+    width: 1000px; 
+    height: 200px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+#map{
+    width:100%;
+    height:350px;
+}
+
+.bigmap{
+   
+    text-align: center;    
+    font-weight: bold;
+    }
+    
+
+
+.centerimg{
+    width: 1000px;
+    height: 350px;
+    text-align: center;
+}
+
+.outimg{
+    text-align: center;
+    font-weight: bold;
+}
+
+/* .bigmap:hover {		
+
+    cursor : pointer;
+    
+    background-color : #ff00ff;	} */

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>미생(美生) 찾아오시는길</title>
+
+		<link rel="stylesheet" href="../css/yuna_bootstrap.css" />
+		<link rel="stylesheet" href="../css/yuna.css" />
+
+		<!-- 합쳐지고 최소화된 최신 CSS -->
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
+		/>
+
+		<!-- 부가적인 테마 -->
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"
+		/>
+
+		<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+		<script src="../javascript/yuna_map.js"></script>
+		<script
+			type="text/javascript"
+			src="//dapi.kakao.com/v2/maps/sdk.js?appkey=7a54ad185b5d86765e6073819817625d"
+		></script>
+		<!-- font-awesome.css 추가 -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+		/>
+	</head>
+	<body>
+		<!-- nav 영역 -->
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button
+						type="button"
+						class="navbar-toggle collapsed"
+						data-toggle="collapse"
+						data-target="#bs-example-navbar-collapse-1"
+					>
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Beautiful Life</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a
+								href="#"
+								class="dropdown-toggle"
+								data-toggle="dropdown"
+								role="button"
+								aria-expanded="false"
+								>회사소개 <span class="caret"></span
+							></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">회사소개</a></li>
+								<li><a href="#" target="_blank">영상</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a
+								href="#"
+								class="dropdown-toggle"
+								data-toggle="dropdown"
+								role="button"
+								aria-expanded="false"
+								>베스트 <span class="caret"></span
+							></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">베스트</a></li>
+								<li><a href="#">신제품</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a
+								href="#"
+								class="dropdown-toggle"
+								data-toggle="dropdown"
+								role="button"
+								aria-expanded="false"
+								>웨딩 <span class="caret"></span
+							></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">프로포즈</a></li>
+								<li><a href="#">웨딩부케</a></li>
+								<li><a href="#">축하화환</a></li>
+								<li class="divider"></li>
+								<li><a href="#">신제품</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a
+								href="#"
+								class="dropdown-toggle"
+								data-toggle="dropdown"
+								role="button"
+								aria-expanded="false"
+								>근조화환 <span class="caret"></span
+							></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">1단화환</a></li>
+								<li><a href="#">2단화환</a></li>
+								<li><a href="#">3단화환</a></li>
+								<li class="divider"></li>
+								<li><a href="#">신제품</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a
+								href="#"
+								class="dropdown-toggle"
+								data-toggle="dropdown"
+								role="button"
+								aria-expanded="false"
+								>고객센터 <span class="caret"></span
+							></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">fAQ</a></li>
+								<li><a href="#">1:1문의게시판</a></li>
+								<li><a href="#">오시는길</a></li>
+							</ul>
+						</li>
+					</ul>
+					<form class="navbar-form navbar-right" role="search">
+						<div class="form-group">
+							<input
+								type="text"
+								class="form-control"
+								placeholder="상품을 검색하세요"
+							/>
+						</div>
+						<!-- 검색창 이미지 -->
+						<button type="submit" class="btn btn-default">
+							<img src="../resources/images/yn_search.svg" alt="검색이미지" />
+						</button>
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">로그인</a></li>
+						<li><a href="#">회원가입</a></li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+		<!-- <div class="focus-in-contract">
+			<h1>F&nbsp;A&nbsp;Q&nbsp;</h1>
+		</div> -->
+
+		<!-- body 동영상 영역 -->
+		<div class="top-box">
+			<video muted autoplay loop>
+				<source src="../resources/videos/yn_f3.mp4" type="video/mp4" />
+			</video>
+		</div>
+
+		<div class="load">
+			<h1>찾아오시는길</h1>
+			<br />
+			<span>
+				웨딩 부케,화환, 근조화환 전문 쇼핑몰 <br />
+				미생으로 오시는 길을 안내합니다.
+			</span>
+		</div>
+		<p class="locationTxet">
+			L&nbsp;O&nbsp;C&nbsp;A&nbsp;T&nbsp;I&nbsp;O&nbsp;N
+		</p>
+		<div class="wrap">
+			<div id="map"></div>
+
+			<div class="address">
+				<strong>Address</strong> : 서울 양천구 목동동로12길 24 미생 <br />
+				<strong>Tel</strong> : 1234-1234 Fax : 02-1234-1234
+			</div>
+
+			<div class="bus_subway">
+				<h3><i class="fas fa-bus"></i> 버스로 오시는 경우</h3>
+				<p>
+					6018,6624 <br />
+					6640B,6649,양천04
+				</p>
+				<h3><i class="fas fa-subway"></i> 지하철로 오시는 경우</h3>
+				<p>
+					오목교역 8번출구 - 출구뒤쪽골목 - <br />
+					우회전 - 직진 후 막다른 길에서 <br />
+					왼쪽에 위치 - 목동대림아파트 정문 맞은편
+				</p>
+			</div>
+		</div>
+
+		<div class="ft_info_wrap">
+			<div class="ft_info">
+				<dl>
+					<dt>(주)미생</dt>
+					<dd>
+						고객센터 :
+						<a href="#">1234-1234</a>
+					</dd>
+					<dd>
+						이메일 :
+						<a href="#">beautifulife@gamil.com</a>
+					</dd>
+					<dd>대표자명 : 최나유</dd>
+					<dd>사업자등록번호 : 123-12-1234</dd>
+					<dd>위치 : 인생시 시작구 빛날동12</dd>
+					<!-- fortawesome 적용 -->
+					<i class="fab fa-youtube"></i>
+					<span><a href="#" target="_blank">미생 영상보러가기</a></span>
+				</dl>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>미생_회원가입</title>
+		<script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+		<link rel="stylesheet" href="../css/yuna.css">
+		<script>
+			function pwcf(){
+                    var pw = document.getElementById('pw1').value;
+                    var rpw = document.getElementById('pw2').value;
+                    if(pw !== rpw){
+                            alert("비밀번호가 일치하지 않습니다")
+                           return false;
+                     }
+                }
+        
+			function b_lPostcode() {
+				new daum.Postcode({
+					oncomplete: function (data) {
+						var roadAddr = data.roadAddress;
+						var extraRoadAddr = "";
+						if (data.bname !== "" && /[동|로|가]$/g.test(data.bname)) {
+							extraRoadAddr += data.bname;
+						}
+						if (data.buildingName !== "" && data.apartment === "Y") {
+							extraRoadAddr +=
+								extraRoadAddr !== ""
+									? ", " + data.buildingName
+									: data.buildingName;
+						}
+						if (extraRoadAddr !== "") {
+							extraRoadAddr = " (" + extraRoadAddr + ")";
+						}
+						document.getElementById("postcode").value = data.zonecode;
+						document.getElementById("roadAddress").value = roadAddr;
+						document.getElementById("jibunAddress").value = data.jibunAddress;
+						if (roadAddr !== "") {
+							document.getElementById("extraAddress").value = extraRoadAddr;
+						} else {
+							document.getElementById("extraAddress").value = "";
+						}
+						var guideTextBox = document.getElementById("guide");
+						if (data.autoRoadAddress) {
+							var expRoadAddr = data.autoRoadAddress + extraRoadAddr;
+							guideTextBox.innerHTML =
+								"(예상 도로명 주소 : " + expRoadAddr + ")";
+							guideTextBox.style.display = "block";
+						} else if (data.autoJibunAddress) {
+							var expJibunAddr = data.autoJibunAddress;
+							guideTextBox.innerHTML =
+								"(예상 지번 주소 : " + expJibunAddr + ")";
+							guideTextBox.style.display = "block";
+						} else {
+							guideTextBox.innerHTML = "";
+							guideTextBox.style.display = "none";
+						}
+					},
+				}).open();
+			}
+		</script>
+
+	
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="title">
+				<h2>회원가입</h2>
+			</div>
+
+			<form id="joinForm" name="joinForm" action="#" method="post">
+				<fieldset class="required_form">
+					<legend>기본입력</legend>
+					<div class="list_required">
+						<ul>
+							<li>
+								<label for="id"
+									>아이디 :
+									<input
+										type="text"
+										placeholder="아이디를 입력하세요"
+										required="required"
+									/>
+								</label>
+							</li>
+							<li>
+								<label for="pw1"
+									>비밀번호 :
+									<input
+										id="pw1"
+										type="password"
+										placeholder="비밀번호를 입력하세요"
+										required="required"
+								/></label>
+							</li>
+							<li>
+								<label for="pw2"
+									>비밀번호 확인 :
+									<input
+										id="pw2"
+										type="password"
+										placeholder="비밀번호를 다시 입력하세요."
+										required="required"
+								/></label>
+							</li>
+							<li>
+								<label for="name"
+									>이름 :
+									<input
+										type="text"
+										placeholder="이름을 입력하세요."
+										required="required"
+								/></label>
+							</li>
+							<li>
+								<label for="address"
+									>주소 :
+									<input
+										type="text"
+										id="postcode"
+										placeholder="우편번호"
+										required="required"
+								/></label>
+								<input type="text" id="postcode" placeholder="우편번호" />
+								<input
+									type="button"
+									onclick="b_lPostcode()"
+									value="우편번호 찾기"
+								/><br />
+								<input type="text" id="roadAddress" placeholder="도로명주소" />
+								<input type="text" id="jibunAddress" placeholder="지번주소" />
+								<span id="guide" style="color: #999; display: none"></span>
+								<input type="text" id="detailAddress" placeholder="상세주소" required="required"  />
+								<input type="text" id="extraAddress" placeholder="참고항목" />
+							</li>
+						</ul>
+					</div>
+				</fieldset>
+				<fieldset class="choice_form">
+					<legend>선택입력</legend>
+					<ul class="list_choice">
+						<li>
+							<label for="file">프로필사진 : <input type="file" /></label>
+						</li>
+						<li>
+							<label for="gender"
+								>성별 : 여성
+								<input type="radio" name="gender" checked="checked" />남성
+								<input type="radio" name="gender"
+							/></label>
+						</li>
+						<li>
+							<label for="email"
+								>이메일 : <input type="email" name="email" autocomplete="on"
+							/></label>
+						</li>
+						<li>
+							<p>
+								핸드폰번호 :
+								<select id="hp" title="휴대폰 앞자리 선택">
+									<option>선택</option>
+									<option selected="selected">010</option>
+									<option>011</option>
+								</select>
+								<input
+									type="tel"
+									id="tel"
+									pattern="\d{3,4}-\d{4}"
+									title="휴대폰번호 숫자3자리에서 4자리-숫자 4자리 입력"
+								/>
+							</p>
+						</li>
+						<li>
+							<label for="friend">추천인 아이디 : <input type="text" /></label>
+						</li>
+						<li>
+							<label for="date">생일 : <input type="date"/> 양력<input
+									type="radio"
+									name="birthday"
+									checked="checked" />음력<input type="radio" name="birthday"
+							/></label>
+						</li>
+						<li>
+							<label for="color"
+								>좋아하는 색깔 :
+								<input type="color" id="favcolor" value="#ff8d8d"
+							/></label>
+						</li>
+						<li>
+							<label for="url"
+								>SNS주소 : <input type="url" name="url" id="rul"
+							/></label>
+						</li>
+						<li>
+							<p>
+								가입경로 :
+								<select id="root">
+									<option value=""></option>
+									<option>광고</option>
+									<option>지인소개</option>
+									<option>인터넷(블로그,카페)</option>
+									<option>검색</option>
+									<option>기타</option>
+								</select>
+							</p>
+						</li>
+						<li>
+							<label for="goal"
+								>가입목적 : <br /><textarea cols="50" rows="10"></textarea>
+							</label>
+						</li>
+						<li>
+							<label for=""
+								>관심분야 : <br />
+								<span>
+									<input type="checkbox" value="패션" name="chk1" />패션
+									<input type="checkbox" value="여행" name="chk2" />여행
+									<input type="checkbox" value="미용" name="chk3" />미용
+									<input type="checkbox" value="맛집" name="chk4" />맛집
+									<input type="checkbox" value="운동" name="chk5" />운동
+									<input type="checkbox" value="독서" name="chk6" />독서
+									<input type="checkbox" value="원예" name="chk7" />원예
+									<input type="checkbox" value="결혼" name="chk8" />결혼
+								</span></label
+							>
+						</li>
+						<p class="age">*14세 이상입니다. <strong>(필수)</strong></p>
+						<br />
+						<p class="footer">
+							*회원가입에 필요한 최소한의 정보만 입력 받음으로써 고객님의
+							개인정보 수집을 최소화하고 편리한 회원가입을 제공합니다.
+						</p>
+					</ul>
+				</fieldset>
+			
+					
+				<p class="join"><input type="submit" value="가입하기" onclick="return pwcf()"></p>
+				<p class="reset"><input type="reset" value="다시작성" /></p>
+			</form>
+		</div>
+	</body>
+</html>

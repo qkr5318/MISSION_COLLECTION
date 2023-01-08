@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>회원가입</title>
+        
+        
+        <!-- 합쳐지고 최소화된 최신 CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.css">
+        
+        <!-- 부가적인 테마 -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+        
+        
+        <link rel="stylesheet" type="text/css" href="../css/chanhyeong_map.css">
+
+		<script src="../javascript/jquery-3.3.1.js"></script>
+        
+        <script type="text/javascript" src="../javascript/bootstrap.js"></script>
+
+</head>
+<body id="page-top">
+    <nav class="navbar navbar-default bg-light" style="position: relative;z-index:100;">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#" style="color:pink;">CoDing</a>
+          </div>
+      
+          
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">게임소개<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">캐릭터</a></li>
+                  <li><a href="#">스토리</a></li>
+                  <li><a href="#">아이템</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">커뮤니티<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">스크린샷</a></li>
+                  <li><a href="#">자유게시판</a></li>
+                  <li><a href="#">질문게시판</a></li>
+                  <li><a href="#">자랑하기</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">게임소식<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">업데이트</a></li>
+                  <li><a href="#">이벤트</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">자료실<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">다운로드</a></li>
+                  <li><a href="#">라이브러리</a></li>
+                  <li><a href="#">이미지</a></li>
+                  <li><a href="#"></a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Etc..<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">1:1 문의</a></li>
+                  <li><a href="#">자주 묻는 질문</a></li>
+                  <li><a href="#">신고하기</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="navbar-form navbar-right"></form>
+
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">로그인</a></li>
+              <li><a href="#">회원가입</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </body><br><br>
+
+    <div class="location">
+
+    <h1 style="text-align: center;">찾아 오시는 길</h1>
+    <br>
+    <hr>
+    <br>
+    <div id="map" style="width:60%; height:500px; margin: 10px auto" ></div>
+
+    <!-- services 라이브러리 불러오기 -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1a200a7b0dba0468ac260a89ed219960"></script>
+    <script>
+
+    
+
+    var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+        mapOption = { 
+            center: new kakao.maps.LatLng(37.40195036731936, 127.10346624977315), // 지도의 중심좌표
+            level: 3 // 지도의 확대 레벨
+        };
+    
+    var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+    // 일반 지도와 스카이뷰로 지도 타입을 전환할 수 있는 지도타입 컨트롤을 생성합니다
+    var mapTypeControl = new kakao.maps.MapTypeControl();
+
+    // kakao.maps.ControlPosition은 컨트롤이 표시될 위치를 정의하는데 TOPRIGHT는 오른쪽 위를 의미합니다
+    // 지도에 컨트롤을 추가해야 지도위에 표시됩니다
+    
+    map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
+    // 지도 확대 축소를 제어할 수 있는  줌 컨트롤을 생성합니다
+    var zoomControl = new kakao.maps.ZoomControl();
+    
+    map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+    // 마커가 표시될 위치입니다 
+    var markerPosition  = new kakao.maps.LatLng(37.40195036731936, 127.10346624977315); 
+    
+    // 마커를 생성합니다
+
+    var marker = new kakao.maps.Marker({
+        position: markerPosition
+    });
+
+    window.addEventListener('resize',function(){
+          map.setCenter(new kakao.maps.LatLng(37.40195036731936, 127.10346624977315));
+                });
+     
+
+    // 마커가 지도 위에 표시되도록 설정합니다
+    marker.setMap(map);
+    
+    // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+    // marker.setMap(null);  
+
+      
+    </script>
+<br>
+<div class="plusmap" style="text-align: center;" >
+
+    <span class="address">
+        <ul><span class="address_color" style="font-size: 20px;">주소 :</span> 경기도 성남시 분당구 판교로256번길 7 넥슨코리아 (우)13487</ul>
+        <br>
+        <ul><span class="address_color" style="font-size: 20px;">지번주소 :</span> 경기도 성남시 분당구 삼평동 627</ul>
+        <br>
+        <ul><span class="address_color" style="font-size: 20px;">대중교통 이용 시 :</span> 금토천교 하차 후 도보 6분</ul>
+        
+        <img class="pikapika" src="../resources/images/chanhyeong_pikachu.png"/>
+    </span>
+  </div>
+</div>
+<body>
+
+   
+
+
+<footer>
+		<ul style="display: inline-block ">
+			<li><a href="#">회사소개</a>│</li>
+			<li><a href="#">인재채용</a>│</li>
+			<li><a href="#">광고문의</a>│</li>
+			<li><a href="#">통합약관</a>│</li>
+			<li><a href="#">서비스운영정책</a>│</li>
+			<li><a href="#"><strong>개인정보처리방침</strong></a>│</li>
+			<li><a href="#">청소년보호정책</a>│</li>
+			<li><a href="#">사이트맵</a>│</li>
+			<li><a href="#">이메일주소무단수집거부</a></li><br><br><br><br>
+			<span>COPYRIGHT <a style="color: pink"> CodIng </a> Corp. ALL RIGHTS RESERVED</span> &nbsp; &nbsp; &nbsp; <img src="../resources/images/chanhyeong_image.svg" style="width: 30px" height="30px" alt="image">
+		</ul>
+	  </footer>  
+</body>
+</html>

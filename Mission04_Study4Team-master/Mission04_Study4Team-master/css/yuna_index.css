@@ -1,0 +1,255 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Nanum+Gothic:wght@700&family=Vollkorn:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Lobster&family=Nanum+Gothic:wght@700&family=Noto+Serif+KR:wght@300&family=Vollkorn:ital,wght@1,500&display=swap");
+
+			body {
+				font-family: "Noto Serif KR", serif;
+				background: linear-gradient(rgb(255, 254, 255), rgb(255 184 218));
+				margin: 0 auto;
+				padding: 0 auto;
+				overflow-x: hidden;
+			}
+			/* 카카오 지도 API 관련 영역 */
+			.customoverlay {
+				position: relative;
+				bottom: 85px;
+				border-radius: 6px;
+				border: 1px solid #ccc;
+				border-bottom: 2px solid #ddd;
+				float: left;
+			}
+			.customoverlay:nth-of-type(n) {
+				border: 0;
+				box-shadow: 0px 1px 2px #888;
+			}
+
+			/* 마커의 색상을 밝게 주어 포인트를 줌 */
+			.customoverlay a {
+				display: block;
+				text-decoration: none;
+				color: #000;
+				text-align: center;
+				border-radius: 6px;
+				font-size: 14px;
+				font-weight: bold;
+				overflow: hidden;
+				background: #f7b9b9;
+				background: #f7b9b9
+					url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png)
+					no-repeat right 14px center;
+			}
+			.customoverlay .title {
+				display: block;
+				text-align: center;
+				background: #fff;
+				margin-right: 35px;
+				padding: 10px 15px;
+				font-size: 14px;
+				font-weight: bold;
+			}
+			.customoverlay:after {
+				content: "";
+				position: absolute;
+				margin-left: -12px;
+				left: 50%;
+				bottom: -12px;
+				width: 22px;
+				height: 12px;
+				background: url("https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png");
+			}
+
+			header {
+				margin: -8px;
+				height: 60px;
+				padding: 1rem;
+				color: #8d8d8d;
+				background: #ffbdec8c;
+				font-weight: bold;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				width: 1900px;
+			}
+			header h1 a {
+				text-decoration: none;
+				color: #8d8d8d;
+			}
+			header h1 {
+				margin: 0;
+				padding: 20px;
+			}
+			header h1 a:hover {
+				color: black;
+			}
+			.menu span {
+				margin: 30px;
+				padding: 20px;
+				font-size: 23px;
+				text-align: center;
+				cursor: pointer;
+				color: #8d8d8d;
+				
+				
+			}
+			
+
+			
+			.info span {
+				padding: 10px;
+				font-size: 20px;
+				margin-right: 18px;
+				cursor: pointer;
+			}
+			
+			#gallery {
+				width: 750px;
+				height: 400px;
+				margin: 0 auto;
+				overflow: hidden;
+				display: flex;
+				margin-top: 50px;
+			}
+			.slide li img {
+				margin: 0 auto;
+
+				justify-content: center;
+			}
+			.slide li {
+				list-style: none;
+			}
+
+			/* text-shadow 활용하여 load h1 태그의 포인트를 줌 */
+			.load h1 {
+				display: flex;
+				margin-top: 50px;
+				margin-bottom: 3px;
+				margin-left: 50px;
+				padding-top: 30px;
+				text-shadow: 10px 8px 3px rgb(253, 163, 163);
+				text-align: center;
+				height: 20px;
+				line-height: 10px;
+				color: rgb(82, 82, 82);
+			}
+			.load span {
+				margin-left: 100px;
+				display: inline-block;
+				padding: 20px;
+				font-weight: bold;
+			}
+
+			.locationTxet {
+				font-size: 20px;
+				margin: 20px;
+				padding: 20px;
+				display: flex;
+				flex-basis: 100%;
+				align-items: center;
+				color: rgba(75, 75, 75, 0.89);
+				font-weight: bold;
+				font-size: 20px;
+				margin: 8px 0px;
+			}
+			/* 가상요소 before,after 활용하여 텍스트 양옆에 선을 그음 */
+			.locationTxet::before,
+			.locationTxet::after {
+				content: "";
+				flex-grow: 1;
+				background: rgba(5, 5, 5, 0.5);
+				height: 1px;
+				font-size: 0px;
+				line-height: 0px;
+				margin: 0px 16px;
+			}
+
+			.wrap {
+				background-color: #fff;
+				width: 1500px;
+				margin: 0 auto;
+				height: 1930px;
+			}
+
+			.wrap h1 {
+				margin: 0 0 0 3em;
+				padding: 3em 0 1em 0;
+			}
+
+			.wrap p {
+				margin: 0 0 0 6em;
+				padding-bottom: 3em;
+			}
+
+			
+			#map {
+				margin: 2em 0 0 0;
+				display: block;
+				width: 800px;
+				border: 2px dashed white;
+				height: 400px;
+				margin-left: 100px;
+				justify-content: flex-start;
+				margin: 0 auto;
+			}
+
+			.no7 {
+				text-align: center;
+				margin: 30px;
+			}
+			.address {
+				width: 800px;
+				margin: 0 auto;
+			}
+			
+			.left_right {
+				text-align: center;
+				margin: 0 auto;
+				padding: 20px;
+			}
+			.left_right h3 {
+				padding-bottom: 10px;
+				padding-top: 20px;
+				text-align: center;
+			}
+			.left_right p {
+				text-align: center;
+				margin: 0 auto;
+				
+			}
+
+			.ft_info {
+				display: flex;
+				display: -webkit-flex;
+				display: -ms-flexbox;
+				justify-content: center;
+				align-items: center;
+				margin-top: 20px;
+			}
+
+			.ft_info dl dt {
+				border-top: 1px dashed gray;
+				padding: 8px;
+				text-align: center;
+				font-family: "Noto Serif KR", serif;
+				font-size: 18px;
+				line-height: 160%;
+				font-weight: bold;
+			}
+
+			.ft_info dl dd {
+				margin: 0 auto;
+				text-align: left;
+				font-family: "Noto Serif KR", serif;
+				font-size: 16px;
+				color: rgb(85, 84, 84);
+				line-height: 160%;
+			}
+			.ft_info dl dd a {
+				color: gray;
+				text-decoration: none;
+			}
+			.ft_info dl dd a:hover {
+				text-decoration: underline;
+			}
+
+		
+		</style>

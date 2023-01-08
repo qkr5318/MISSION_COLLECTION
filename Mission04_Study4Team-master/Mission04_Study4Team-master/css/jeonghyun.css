@@ -1,0 +1,245 @@
+@charset "UTF-8";
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    font-size: 16px;
+    list-style: none;
+    text-decoration: none;
+    /* overflow-x: hidden; */
+    font-family: 'Noto Sans KR', sans-serif; /*구글폰트에서 연결한 폰트로 지정*/
+}
+
+a{
+    color: #333;
+}
+body{
+    margin: 0px;
+    position: relative;
+}
+
+.topMenuBar{
+    width: 100%;
+    height: 40px;
+}
+.htopMenuBar_{
+    position: fixed; /*상단에 고정하기 위해 fixed 활용*/
+    padding-left: 300px; /*브라우저 왼쪽으로부터 300px만큼 띄움*/
+    height: 40px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 10; /* 모든 요소의 상단에 보이도록 z-index:10 을 부여*/
+}
+.htopMenuBar_ >li{
+    float: left; /*왼쪽배치위해 float에 left 속성부여 */
+    line-height: 40px;
+    margin-left: 50px;
+}
+.htopMenuBar_> li:nth-child(5){
+    padding-left: 500px; 
+}
+.htopMenuBar_> li > a:hover{
+    font-weight: bold;
+}
+
+
+
+
+.head{
+    background: url(../resources/images/jh_main.jpg) no-repeat;
+    background-size: 100% 300%;
+    background-position: 60%;
+    width: 100%;
+    height: 300px;
+    opacity: 0.7; /*투명도 0.7 부여 */
+    margin: 0px;
+    padding: 0px;
+    
+    
+}
+.head > a{
+    color: rgba(0, 0, 0, 0.8) ;
+}
+.head > a > p{
+    position: absolute;
+    left: 735px ;
+    top: 170px;
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    opacity: 1;
+   
+}
+.menu{
+    width: 1900px;
+    height: 50px;
+    text-align: center;
+    z-index: 5; /*topMenuBar를 가리지 않고 .direction 보다 상단에 보여지게 하기위해
+                z-index:5 적용*/
+    background: rgb(230, 230, 230);
+    margin-left: 0;
+    position: relative; /*z-index를 사용하기 위해 position:relative 적용*/
+    
+}
+.navi > li{
+    cursor: pointer;
+    display: block;
+    float: left;
+    background: #C4C8D5;
+    height: 50px;
+    width: 270px;
+    font-weight: normal;
+    transition: all 0.3s;
+
+}
+.navi > li:hover{
+    background: #babdc7;
+    font-weight: bold;
+}
+.navi > li:hover >a{
+    color: #555
+}
+.navi > li > a{
+    width: 270px;
+    text-decoration: none;
+    color: rgba(100,100,100,1);
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+.submenu{
+    display: none;
+   
+    
+}
+.submenu > li {
+    margin-left: 0;
+    width: 270px;
+    height: 35px;
+    background-color: #C4C8D5;
+    line-height: 16px; /*상하 중앙정렬을 위해 line-height 적용*/
+    
+}
+.submenu > li:hover{
+    background-color: #babdc7;
+   
+    font-weight: bold;
+}
+
+.submenu > li > a {
+    width: 270px;
+    height: 35px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 35px;
+    
+}
+.submenu > li:hover > a{
+    font-weight: bold;
+}
+
+/* ↑↑ ----------head영역 -----------------↑↑*/
+
+
+
+.direction{
+    position: relative; /*z-index 적용 위해 position 적용*/
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-top: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+    z-index: 1; /*topMenuBar 와 navi 보다 아래에 배치하기위해 z-index:1 적용 */
+    border: 2px solid black;
+    border-radius: 10px;
+    
+}
+
+.dtitle{
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 30px;
+    
+    
+}
+
+#map{
+    margin-bottom: 80px;
+    border: 1px solid black;
+}
+.adress_name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+.adtext{
+    font-size: 18px;
+}
+
+.subway{
+    width: 33px;
+    height: 10px;
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+.subway_t{
+    font-size: 20px;
+    
+    line-height: 20px;
+}
+.bus{
+    width: 25px;
+    height: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.bus_t{
+    font-size: 20px;
+    display: inline-block;
+    line-height: 20px;
+}
+
+
+
+
+/* ↓  footer영역 */
+.footer{
+    margin-top: 0px;
+    background:#C4C8D5;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    width: 100%;
+    height: 200px;
+}
+
+.table3{
+    width: 100%;
+}
+
+.tr3{
+    height: 50px;
+}
+
+.tr3 th{
+    width: 150px;
+    text-align: left;
+    vertical-align: bottom;
+    line-height: 5px;
+    padding:30px 0px 10px 50px; /*위 오른쪽 아래 왼쪽 순서(시계방향)*/
+    font-size: 18px;
+    border-bottom: 1px solid #333;
+}
+
+.tr3 td{
+    padding-left: 50px;
+}
+

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>미생(美生) 회원가입</title>
+
+		<link rel="stylesheet" href="../css/yuna_bootstrap.css" />
+		<link rel="stylesheet" href="../css/yuna.css" />
+
+		<!-- 합쳐지고 최소화된 최신 CSS -->
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
+		/>
+
+		<!-- 부가적인 테마 -->
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"
+		/>
+
+		<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+		<script src="../javascript/yuna.js"></script>
+		<script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+		
+		<!-- font-awesome.css 추가 -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+		/>
+	</head>
+	<body>
+		<!-- nav 영역 -->
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button
+						type="button"
+						class="navbar-toggle collapsed"
+						data-toggle="collapse"
+						data-target="#bs-example-navbar-collapse-1"
+					>
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Beautiful Life</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a
+								href="#"
+								class="dropdown-toggle"
+								data-toggle="dropdown"
+								role="button"
+								aria-expanded="false"
+								>회사소개 <span class="caret"></span
+							></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">회사소개</a></li>
+								<li><a href="#" target="_blank">영상</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a
+								href="#"
+								class="dropdown-toggle"
+								data-toggle="dropdown"
+								role="button"
+								aria-expanded="false"
+								>베스트 <span class="caret"></span
+							></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">베스트</a></li>
+								<li><a href="#">신제품</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a
+								href="#"
+								class="dropdown-toggle"
+								data-toggle="dropdown"
+								role="button"
+								aria-expanded="false"
+								>웨딩 <span class="caret"></span
+							></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">프로포즈</a></li>
+								<li><a href="#">웨딩부케</a></li>
+								<li><a href="#">축하화환</a></li>
+								<li class="divider"></li>
+								<li><a href="#">신제품</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a
+								href="#"
+								class="dropdown-toggle"
+								data-toggle="dropdown"
+								role="button"
+								aria-expanded="false"
+								>근조화환 <span class="caret"></span
+							></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">1단화환</a></li>
+								<li><a href="#">2단화환</a></li>
+								<li><a href="#">3단화환</a></li>
+								<li class="divider"></li>
+								<li><a href="#">신제품</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a
+								href="#"
+								class="dropdown-toggle"
+								data-toggle="dropdown"
+								role="button"
+								aria-expanded="false"
+								>고객센터 <span class="caret"></span
+							></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">fAQ</a></li>
+								<li><a href="#">1:1문의게시판</a></li>
+								<li><a href="#">오시는길</a></li>
+							</ul>
+						</li>
+					</ul>
+					<form class="navbar-form navbar-right" role="search">
+						<div class="form-group">
+							<input
+								type="text"
+								class="form-control"
+								placeholder="상품을 검색하세요"
+							/>
+						</div>
+						<button type="submit" class="btn btn-default">검색</button>
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">로그인</a></li>
+						<li><a href="yuna_signup.html">회원가입</a></li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+		<div class="blur-out-contract">
+			<h1>
+				미&nbsp;&nbsp;생
+				<span
+					>M&nbsp;e&nbsp;m&nbsp;b&nbsp;e&nbsp;r&nbsp;s&nbsp;h&nbsp;i&nbsp;p
+					혜택</span
+				>
+			</h1>
+		</div>
+
+		<!-- paralleax 영역 첫번째 섹션-->
+		<div class="paralleax1">
+			<div class="text">
+				<span class="img_border trans"
+					>M&nbsp;e&nbsp;m&nbsp;b&nbsp;e&nbsp;r&nbsp;s&nbsp;h&nbsp;i&nbsp;p</span
+				>
+			</div>
+		</div>
+		<!-- paralleax 영역 두번째 섹션-->
+		<section class="section section_02">
+			<div class="icon_wrap">
+				<div class="icon1">
+					<img
+						src="../resources/images/yn_free_icon.png"
+						alt="무료배송이미지"
+					/>
+				</div>
+				<div class="icon2">
+					<img src="../resources/images/yn_new_icon.png" alt="회원가입이미지" />
+				</div>
+				<div class="icon3">
+					<img
+						src="../resources/images/yn_present_icon.png"
+						alt="선물포장이미지"
+					/>
+				</div>
+			</div>
+			<div class="icon_text_wrap">
+				<div class="icon_text1">회원가입시 1회 <br />무료배송쿠폰</div>
+				<div class="icon_text2">회원가입시 1회<br />3000원 포인트 적립</div>
+				<div class="icon_text3">회원가입시 1회<br />무료 고급 패키지 포장</div>
+			</div>
+		</section>
+		<div class="paralleax2">
+			<div class="text">
+				<span class="img_border trans">j&nbsp;o&nbsp;i&nbsp;n</span>
+			</div>
+		</div>
+
+		<div class="wrap">
+			<div class="title">
+				<h2>회원가입</h2>
+			</div>
+
+			<form id="joinForm" name="joinForm" action="#" method="post">
+				<fieldset class="required_form">
+					<legend>기본입력</legend>
+					<table class="table table-bordered">
+						<colgroup>
+							<col style="width: 150px" />
+							<col style="width: auto" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th score="row">아이디</th>
+								<td>
+									<input
+										class="input1"
+										type="text"
+										placeholder="아이디를 입력하세요"
+										required="required"
+									/>
+								</td>
+							</tr>
+							<tr>
+								<th score="row">비밀번호</th>
+								<td>
+									<input
+										class="input1"
+										id="pw1"
+										type="password"
+										placeholder="비밀번호를 입력하세요"
+										required="required"
+									/>
+								</td>
+							</tr>
+
+							<tr>
+								<th score="row">비밀번호 확인</th>
+								<td>
+									<input
+										class="input1"
+										id="pw2"
+										type="password"
+										placeholder="비밀번호를 다시 입력하세요."
+										required="required"
+									/>
+								</td>
+							</tr>
+							<tr>
+								<th score="row">이름</th>
+								<td>
+									<input
+										class="input1"
+										type="text"
+										placeholder="이름을 입력하세요."
+										required="required"
+									/>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">주소</th>
+								<td>
+									<input
+										type="text"
+										id="postcode"
+										placeholder="우편번호"
+										required="required"
+									/>
+									<input
+										type="button"
+										onclick="b_lPostcode()"
+										value="우편번호 찾기"
+									/><br />
+									<input
+										type="text"
+										id="roadAddress"
+										placeholder="도로명주소"
+									/>
+									<input type="text" id="jibunAddress" placeholder="지번주소" />
+									<span id="guide" style="color: #999; display: none"></span>
+									<input
+										type="text"
+										id="detailAddress"
+										placeholder="상세주소"
+										required="required"
+									/>
+									<input type="text" id="extraAddress" placeholder="참고항목" />
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</fieldset>
+
+				<fieldset class="choice_form">
+					<legend>선택입력</legend>
+					<table class="table table-bordered">
+						<colgroup>
+							<col style="width: 150px" />
+							<col style="width: auto" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th score="row">프로필사진</th>
+								<td><input type="file" /></td>
+							</tr>
+							<tr>
+								<th score="row">성별</th>
+								<td>
+									여성
+									<input type="radio" name="gender" checked="checked" /> 남성
+									<input type="radio" name="gender" />
+								</td>
+							</tr>
+
+							<tr>
+								<th score="row">이메일</th>
+								<td><input type="email" name="email" autocomplete="on" /></td>
+							</tr>
+							<tr>
+								<th score="row">핸드폰번호</th>
+								<td>
+									<select id="hp" title="휴대폰 앞자리 선택">
+										<option>선택</option>
+										<option selected="selected">010</option>
+										<option>011</option>
+									</select>
+									<input
+										type="tel"
+										id="tel"
+										pattern="\d{3,4}-\d{4}"
+										title="휴대폰번호 숫자3자리에서 4자리-숫자 4자리 입력"
+									/>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">추천인 ID</th>
+								<td><input type="text" /></td>
+							</tr>
+							<tr>
+								<th scope="row">생일</th>
+								<td>
+									<input type="date" /> 양력
+									<input type="radio" name="birthday" checked="checked" />
+									음력 <input type="radio" name="birthday" />
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">선호하는 색</th>
+								<td><input type="color" id="favcolor" value="#ff8d8d" /></td>
+							</tr>
+							<tr>
+								<th scope="row">SNS주소</th>
+								<td><input type="url" name="url" id="rul" /></td>
+							</tr>
+							<tr>
+								<th scope="row">가입경로</th>
+								<td>
+									<select id="root">
+										<option value=""></option>
+										<option>광고</option>
+										<option>지인소개</option>
+										<option>인터넷(블로그,카페)</option>
+										<option>검색</option>
+										<option>기타</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">가입목적</th>
+								<td>
+									<textarea style="resize: none" cols="50" rows="3"></textarea>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">관심분야</th>
+								<td>
+									<input type="checkbox" value="패션" name="chk1" /> 패션
+									<input type="checkbox" value="여행" name="chk2" /> 여행
+									<input type="checkbox" value="미용" name="chk3" /> 미용
+									<input type="checkbox" value="맛집" name="chk4" /> 맛집
+									<input type="checkbox" value="운동" name="chk5" /> 운동
+									<input type="checkbox" value="독서" name="chk6" /> 독서
+									<input type="checkbox" value="원예" name="chk7" /> 원예
+									<input type="checkbox" value="결혼" name="chk8" /> 결혼
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<p class="age">*14세 이상입니다. <strong>(필수)</strong></p>
+					<br />
+					<p class="footer">
+						*회원가입에 필요한 최소한의 정보만 입력 받음으로써 고객님의 개인정보
+						수집을 최소화하고 편리한 회원가입을 제공합니다.
+					</p>
+				</fieldset>
+
+				<p class="join">
+					<input type="submit" value="가입하기" onclick="return pwcf()" />
+				</p>
+				<p class="reset"><input type="reset" value="다시작성" /></p>
+			</form>
+		</div>
+
+		<div class="ft_info_wrap">
+			<div class="ft_info">
+				<dl>
+					<dt>(주)미생</dt>
+					<dd>
+						고객센터 :
+						<a href="#">1234-1234</a>
+					</dd>
+					<dd>
+						이메일 :
+						<a href="#">beautifulife@gamil.com</a>
+					</dd>
+					<dd>대표자명 : 최나유</dd>
+					<dd>사업자등록번호 : 123-12-1234</dd>
+					<dd>위치 : 인생시 시작구 빛날동12</dd>
+					<!-- fortawesome 적용 -->
+					<i class="fab fa-youtube"></i>
+					<span><a href="#" target="_blank">미생 영상보러가기</a></span>
+				</dl>
+			</div>
+		</div>
+	</body>
+</html>

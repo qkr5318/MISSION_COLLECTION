@@ -1,0 +1,396 @@
+
+@font-face{
+    font-family: 'RidiBatang';
+    src: url(../resources/fonts/RIDIBatang.otf) format(opentype);
+}
+
+@media all and (max-width: 767px){
+
+  
+  form{
+  margin: 0px 10% 0px;
+  }
+  
+  .body{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    width: 100%;
+    height: 100%;
+    background: #eee;
+  }
+  
+  .body .faq{
+    
+    width: 87%;
+    height: 100%;
+    background-color: #fff;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    margin-left: 5%;
+    border-top: 1px solid #ccc;;
+    border-bottom: 1px solid #ccc;;
+  }
+
+  .question{
+    margin-left: 10%;
+  }
+  .faq p{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+
+  .faq > ul{
+    width: 80%;
+    text-align: left;
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    position: relative;
+    z-index: 15;
+    margin-bottom: 0px !important;
+  }
+
+  .faq > ul:hover{
+    cursor: pointer;
+  }
+
+  .faq > ul > .q{
+    padding-left: 20px;
+    padding-top: 10px;  
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    font-size: 15px;
+    transition: all 0.3s;
+  }
+
+  .faq > ul > .q:hover{
+    background: #ddd;
+    
+  }
+  .faq > ul > .a{
+    display: none;
+    width: 100%;
+    height: auto;
+    cursor: auto;
+    background-color: rgb(248, 248, 248);
+    border-collapse: collapse;
+    border-bottom: 0px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .faq > ul > .a.on{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+}
+ 
+
+
+@media  (min-width: 768px)and (max-width: 1023px) {
+  .navbar {
+    border-radius: 0px !important; /*상단 내비바 모서리 굴절*/
+  }
+
+  .body{
+    text-align: center;  /*문자 가운데 정렬*/
+    padding-top: 50px;  /*안쪽 여백*/
+    padding-bottom: 100px;  /*바닥 여백*/
+    width: 100%;
+    height: 100%;
+    background: #eee;
+  }
+  
+  .body .faq{
+    width: 60%;
+    height: 100%;
+    background-color: #fff;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    margin-left: 20%; /*위치 선정 위해 margin값 적용*/
+    border-top: 1px solid #ccc;;
+    border-bottom: 1px solid #ccc;;
+  }
+  
+  .question{
+    margin-left: 10%;  /*faq클래스 내의 왼쪽 여백 값*/
+  }
+
+  .faq p{
+    font-size: 30px;
+    font-weight: bold;  /*문자 굵게 표시*/
+    margin-bottom: 50px;
+  }
+  
+  .faq > ul{
+    width: 78%; /*border값 2px 포함된 값*/
+    text-align: left;
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    position: relative; /*z-index를 위해 relative적용*/
+    z-index: 15;
+    margin-bottom: 0px !important;
+  }
+  
+  .faq > ul:hover{
+    cursor: pointer;  /*마우스 올렸을때 손가락모양 커서 적용*/
+  }
+  
+  .faq > ul > .q{
+    padding-left: 20px;
+    padding-top: 10px;
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    font-size: 15px;
+    transition: all 0.3s; /*q에 hover했을 시 0.3초간의 변화 적용*/
+  }
+  
+  .faq > ul > .q:hover{
+    background: #ddd;
+    
+  }
+  .faq > ul > .a{
+    display: none;
+    width: 100%;
+    height: auto;
+    cursor: auto;
+    background-color: rgb(248, 248, 248);
+    border-collapse: collapse;
+    border-bottom: 0px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    font-size: 16px;
+    line-height: 25px;  /*행간 높이*/
+  }
+  
+  .faq > ul > .a.on{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+}
+
+
+@media all and (min-width: 1024px) {
+
+  .body{
+    top: 1000px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    width: 100%;
+    height: 100%;
+    background: #eee;
+  }
+  
+  .body .faq{
+    width: 60%;
+    height: 100%;
+    background-color: #fff;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    margin-left: 20%;
+    border-top: 1px solid #ccc;;
+    border-bottom: 1px solid #ccc;;
+  }
+  
+  
+  .question{
+    margin-left: 16%;
+  }
+
+  .faq p{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+  
+  .faq > ul{
+    width: 68%;
+    text-align: left;
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    position: relative;
+    z-index: 15;
+    margin-bottom: 0px !important;
+  }
+  
+  .faq > ul:hover{
+    cursor: pointer;
+  }
+  
+  .faq > ul > .q{
+    padding-left: 20px;
+    padding-top: 10px;  
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    font-size: 20px; 
+    line-height: 20px;
+    transition: all 0.3s;
+  }
+  
+  .faq > ul > .q:hover{
+    background: #ddd;
+    
+  }
+  .faq > ul > .a{
+    display: none;
+    width: 100%;
+    height: auto;
+    cursor: auto;
+    background-color: rgb(248, 248, 248);
+    border-collapse: collapse;
+    border-bottom: 0px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    font-size: 16px;
+    line-height: 25px;
+  }
+  
+  .faq > ul > .a.on{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+  } 
+  
+}
+
+/* ↓-------------bootstrap 수정--------------------↓ */
+.navbar{
+  margin-bottom: 0px !important;  /*메뉴바의 바닥 바깥여백*/
+}
+.navbar-brand{
+    font-weight: bold !important;
+}
+.bg-light{
+  background-color: #F6F5F8 !important;
+}
+.dropdown-menu{
+  
+  z-index:101 !important; /*하단 내용보다 상위에 표현위해 z-index 적용*/
+}
+.dropdown > a{
+  font-size: 17px;
+}
+
+.dropdown-menu{
+  background-color: #F6F5F8 !important;
+  font-size: 16px !important;
+  opacity: 0.9;  /*드롭다운 메뉴바의 투명도*/
+  border:1px solid #000;
+}
+
+.dropdown-item:hover{
+  background-color:  #babdc7 !important;
+  font-weight: bold !important;
+}
+
+.nav-link:hover{
+  font-weight: bold !important;
+}
+
+.img-responsive{
+  height: 300px !important;
+  max-width: "" !important; /*최대 넓이값 null 적용 */
+  width: 100%;
+}
+.h1{
+  font-size: 5rem;
+}
+
+table{
+  width: 600px !important;
+  margin: auto !important;
+  }
+
+.table-bordered th,
+.table-bordered td {
+  border-top: 1px solid #ddd !important;
+  border-left: 1px solid rgba(0,0,0,0) !important;
+  border-right:1px solid rgba(0,0,0,0) !important;
+}
+.btn-dark{
+  background-color: #F6F5F8 !important;
+  height: 38px !important;
+}
+
+/* ↑-------------bootstrap 수정--------------------↑*/
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'RidiBatang';
+  list-style: none;
+  box-sizing: border-box;
+}
+
+svg{
+  width: 20px;  
+  right: 30px;  /*오른쪽으로부터의 거리*/
+  bottom: 60px; /*바닥으로부터의 높이*/
+}
+
+footer{
+  bottom: 0;
+}
+
+#ab1{
+  display: none;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.headFont{
+  margin-top: 0px;
+  width: 100% !important;
+  height: 202px;
+  position: relative;
+  display: block;
+  cursor: default;
+}
+
+.headJfnt{
+  position: absolute;
+  top: 50px !important; 
+  font-weight: 700;
+  opacity: 0; /*서서히 나타나게 하기위해 투명도 적용*/
+  width: 100%;
+  text-align: center;
+}
+
+.headJfnt_img{
+  position: absolute;
+  font-size: 1.1em;
+  opacity: 0;
+  width: 100%;
+  text-align: center;
+  z-index: -1;
+}
+
+
+
+
+
+
+

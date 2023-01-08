@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>회원가입</title>
+        
+        
+        <!-- 합쳐지고 최소화된 최신 CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.css">
+        
+        <!-- 부가적인 테마 -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+        
+        
+        <link rel="stylesheet" type="text/css" href="../css/chanhyeong_login.css">
+
+		<script src="../javascript/jquery-3.3.1.js"></script>
+        
+        <script type="text/javascript" src="../javascript/bootstrap.js"></script>
+
+		<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+
+</head>
+<body id="page-top">
+    <nav class="navbar navbar-default bg-light" style="position: relative;z-index:100;">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#" style="color:pink;">CoDing</a>
+          </div>
+      
+          
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">게임소개<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">캐릭터</a></li>
+                  <li><a href="#">스토리</a></li>
+                  <li><a href="#">아이템</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">커뮤니티<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">스크린샷</a></li>
+                  <li><a href="#">자유게시판</a></li>
+                  <li><a href="#">질문게시판</a></li>
+                  <li><a href="#">자랑하기</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">게임소식<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">업데이트</a></li>
+                  <li><a href="#">이벤트</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">자료실<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">다운로드</a></li>
+                  <li><a href="#">라이브러리</a></li>
+                  <li><a href="#">이미지</a></li>
+                  <li><a href="#"></a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Etc..<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">1:1 문의</a></li>
+                  <li><a href="#">자주 묻는 질문</a></li>
+                  <li><a href="#">신고하기</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="navbar-form navbar-right"></form>
+
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">로그인</a></li>
+              <li><a href="#">회원가입</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <body>
+<body>
+<br><br><br>
+	<h1 style="text-align: center">회원가입</h1>
+<br><br><br>
+
+<div class="register">
+	<div class="container">
+
+	  <form action="#" method="post">
+		  <table class=" table-bordered table">
+			  
+		
+			  <trA>
+				  <th scope="row"><label for="userId"></span>아이디</label></th>
+			  </trA>
+			  <tr>
+				  <td><input type="text" class="form-control" id="uesrId" placeholder="아이디를 입력해주세요" title="아이디를 입력하세요" required="required" style="width: 40%"></td>
+			  </tr>
+			  <tr> 
+				   <th scope="row"><label for="userPw">비밀번호</label></th>
+			  </tr>
+			  <tr>
+				  <td><input type="password" class="form-control" id="userPw" placeholder="비밀번호를 입력해주세요" title="비밀번호를 입력하세요" required="required" maxlength="16" style="width: 40%"></td>
+			  </tr>
+			  <tr>
+				  <th scope="row"><label for="userPwCheck"></span>비밀번호 확인</label></th>
+			  </tr>
+			  <tr>
+				  <td><input type="password" class="form-control" id="userPwCheck" placeholder="비밀번호를 재입력해주세요" title="비밀번호를 한번 더 입력하세요" required="required" maxlength="16" style="width: 40%"></td>
+			  </tr>
+			  <tr>
+				  <th scope="row"><label for="userName"></span>이름</label></th>
+			  </tr>
+			  <tr>
+				  <td><input type="text" class="form-control" id="userName" placeholder="이름을 입력해주세요" title="이름을 입력하세요" style="width: 40%" required="required"></td>
+			  </tr>
+			  <tr>
+				  <th scope="row"><label for="birthday">생년월일</label></th>
+			  </tr>
+			  <tr>
+				  <td><input type="date" id="birthday" title="생년월일을 선택하세요" style="font-size: 16px"></td>
+			  </tr>
+			  <tr>
+				  <th scope="row">성별</th>
+			  </tr>
+			  <tr>
+				  <td>남성&nbsp;&nbsp;<input type="radio" name="gender" class="gender" value="man">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   여성&nbsp;&nbsp;<input type="radio" name="gender" class="gender" value="woman"></td>
+			  </tr>
+			  <tr>
+				  <th scope="row" for="email">이메일</th>
+			  </tr>
+			  <tr>
+				  <td><input type="email" class="form-control" id="email" title="이메일 주소 입력" placeholder="javascript@gmail.com" autocomplete="on" size="30" style="width: 40%">
+				  </td>
+			  </tr>
+			  <tr>
+				  <th scope="row" for="hpn">전화번호</th>
+			  </tr>
+			  <tr name="pnb">
+				  <td><select id="hpn" title="휴대폰 앞자리를 선택해주세요" style="padding: 3px 0 3px 0">
+				  <option>선택</option>
+				  <option value="010" selected>010</option> 
+				  <option value="011" >011</option>
+				  <option value="012" >012</option>
+				  <option value="017" >017</option>
+				  <input type="text" title="휴대폰 번호는 숫자 3 or 4자리 - 숫자 4자리로 입력해주세요"  maxlength="10" pattern="\d{3,4}-\d{4}"  >
+				  </td>
+			  </tr>
+			  <tr>
+				  <th>주소</th>
+			  </tr>
+			  <tr>
+				  <td><input type="text" id="sample4_postcode" placeholder="우편번호" class="address_1">
+					  <input type="button" onclick="javascript:sample4_execDaumPostcode()" value="우편번호 찾기" class="searchAddress"><br>
+					  <input type="text" id="sample4_roadAddress" placeholder="도로명주소" class="address_1">
+					  <input type="text" id="sample4_jibunAddress" placeholder="지번주소" class="address_1">
+					  <span id="guide" style="color:#999;display:none"></span>
+					  <input type="text" id="sample4_extraAddress" placeholder="참고항목" class="address_1">
+					  <input type="text" id="sample4_detailAddress" placeholder="상세주소" class="address_1">
+				  </td>
+			  </tr>
+			  <tr>
+				  <th>선호하는 색깔</th>
+			  </tr>
+			  <tr>
+				  <td><input type="color" class="choiceColor"></td>
+			  </tr>
+			  <tr>
+				  <th>개인 블로그</th>
+			  </tr>
+			  <tr>
+				  <td><input type="url" placeholder="blog.javascript.com" style="font-size: 16px"></td>
+			  </tr>
+			  <tr>
+				  <th>관심분야</th>
+			  </tr>
+			  <tr>
+				  <td class="preferp">
+					  <input type="checkbox" value="interior" class="prefer">&nbsp;&nbsp; C / C++ &nbsp;&nbsp;
+					  <input type="checkbox" value="badroom" class="prefer">&nbsp;&nbsp; PYTHON &nbsp;&nbsp;
+					  <input type="checkbox" value="kitchen" class="prefer">&nbsp;&nbsp; JAVASCRIPT &nbsp;&nbsp;
+					  <input type="checkbox" value="bathroom" class="prefer">&nbsp;&nbsp; ECRIPSE &nbsp;&nbsp;<br>
+					  <input type="checkbox" value="livingroom" class="prefer">&nbsp;&nbsp; Apache TOMCAT &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					  <input type="checkbox" value="office" class="prefer">&nbsp;&nbsp;&nbsp;GIT / GITHUB&nbsp;&nbsp;
+					  <input type="checkbox" value="office" class="prefer">&nbsp;&nbsp;&nbsp;FIGMA 
+				  </td>
+			  </tr>
+			  <tr>
+				  <th><p class="p2">가입 이유, 한 마디</p></th>
+			  </tr>
+			  <tr>
+				  <td><textarea rows="10" cols="40" style="resize: none;"></textarea></td>
+			  </tr>
+			  <tr>
+				<td>
+					<button type="submit" class="btn btn-primary btn-lg" onclick="return firstclick()" target="#">회원가입</button>
+				</td>
+			  </tr>
+		  </table>
+	  </form>
+  </div>
+</div>
+			
+	<footer>
+		<ul style="display: inline-block ">
+			<li><a href="#">회사소개</a>│</li>
+			<li><a href="#">인재채용</a>│</li>
+			<li><a href="#">광고문의</a>│</li>
+			<li><a href="#">통합약관</a>│</li>
+			<li><a href="#">서비스운영정책</a>│</li>
+			<li><a href="#"><strong>개인정보처리방침</strong></a>│</li>
+			<li><a href="#">청소년보호정책</a>│</li>
+			<li><a href="#">사이트맵</a>│</li>
+			<li><a href="#">이메일주소무단수집거부</a></li><br><br><br><br>
+			<span>COPYRIGHT <a style="color: pink"> CodIng </a> Corp. ALL RIGHTS RESERVED</span> &nbsp; &nbsp; &nbsp; <img src="../resources/images/chanhyeong_image.svg" style="width: 30px" height="30px" alt="image">
+		</ul>
+	  </footer>  
+<script src="../javascript/chanhyeong.js"></script>
+</body>
+</html>

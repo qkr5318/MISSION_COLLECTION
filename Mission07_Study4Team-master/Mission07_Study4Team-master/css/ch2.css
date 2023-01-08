@@ -1,0 +1,264 @@
+
+.my-hr1 {
+    border: 0;
+    height: 2px;
+    background: green;
+  }
+
+
+
+  .my-hr2 {
+    border: 0;
+    height: 1px;
+    background: rgb(188, 173, 173)
+}
+  .my-hr3{
+    border: 0px;
+    height: 0.5px;
+    background: rgb(188, 173, 173)
+  }
+  
+    @import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+
+@font-face {
+font-family: 'NanumSquareNeo';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+font-weight: normal;
+font-style: normal;
+}
+
+/* 페이지 상단 부분 */
+*{font-family: 'NanumSquareNeo';}
+ul{list-style: none;} 
+a{text-decoration: none;} 
+
+
+@media (max-width:600px){ /*가로 너비가 600px 이하일 때 아래 스타일 적용*/
+    * {
+        display: block 
+    }
+    *{
+        min-height: 0  
+        }
+    .hifaq{
+        margin-left: 0;
+        text-align: left;
+    }
+    .mainmenu{
+        display: none;
+    }
+    .btmenu{
+        display: block;
+    }
+    #top_menu a {
+        display: none;
+    }
+    .bird{
+        display: none;
+    }
+    .btmenu{
+        display:grid;
+    }
+    
+}
+header{
+    
+    height: 95px;
+    background-color: rgb(255, 252, 252);
+    position: relative;
+}
+#Logo{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    padding: auto;
+} 
+ 
+
+#top_menu{ 
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: 14px;
+    text-decoration: none;
+   ;
+    
+}
+ 
+
+#top_menu a{color: green;}
+
+nav{
+    position: absolute;
+    bottom: 10px;
+    left: 220px;
+    font-size: 16px;
+}
+ 
+.submenu{
+    width: 180px;
+    position: absolute;
+    display: none;
+}
+
+
+.navi  li  a:hover{
+    background-color: red;
+    font-weight: bold;
+}
+
+.submenu  li  a:hover{
+    background-color: red;}s
+
+.li  a{
+    height: 35px;
+    line-height: 35px;
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+    color: green;
+    font-weight: bolder;
+}
+nav li{
+    display: inline;
+    margin-left: 30px;
+}
+ 
+nav li a{color: green; font-weight: bolder;padding-right: 24px; font-size: 20px;}
+
+#main img{
+    width: 1000px;
+    height: 95;
+}
+ 
+
+#content li{
+    display: inline;
+    margin-left: 50px;
+}
+
+a:link {color: black; text-decoration: none;}
+a:hover { text-decoration: underline; font-weight: bold; }
+
+nav li a:link {color: black; text-decoration: none;  
+    ;}
+nav li a:hover {color: yellowgreen; 
+       font-weight: bolder;}
+
+
+
+
+
+
+footer{
+    /* width: 1000px; 
+    height: 95px;
+    margin-top: 20px; */
+    text-align: left;
+    background-color: rgb(255, 252, 252);
+    font-size: 13px;
+}
+
+.footerer{
+    margin-left: 350px;
+    position: absolute;
+
+
+}
+
+.btmenu ul li{
+    color: black;
+
+}
+
+.btmenu{
+    top: -80px;
+    text-align: right;
+    font-size: 12px;
+    line-height: 30px;
+    color: black;
+    position: relative;}
+
+.btmenu li{
+    margin-top: 10px;
+    display: inline-block;
+    width: 100px;
+}
+
+.btmenu li:hover{
+    font-weight: bold;
+}
+
+
+.qr{
+    margin-left: 800px;
+    position: relative;
+}
+ 
+.copy{
+    color: #69725a;
+    padding: 0px;
+    margin: -0px;
+    margin-top: -130px;
+}
+
+
+
+
+
+.naver{
+   padding-left: 120px;
+   max-block-size: 100%;
+    max-width:100%;height:auto;
+}
+
+
+
+
+
+
+    svg{
+        width: 30px;
+    }
+
+
+
+    /* 질문 */
+    ul, li, p { list-style:none; padding:0; margin:0; }
+.listWrap { font-family:'Noto Sans KR', sans-serif; margin-bottom:20px; }
+.listWrap .qa_li { position:relative; display:block; padding:0; border-bottom:1px solid #ededed; cursor:pointer; }
+.listWrap .qa_li:first-child { border-top:1px solid #a6a6a6; }
+.listWrap .qa_li .ca_name { margin-bottom:14px; font-weight:400; color:#999;}
+.listWrap .qa_li .tit { color:#222;  transition:color 0.3s ease-out; }
+.listWrap .qa_li:hover .tit { color:#0a7ac8; }
+.qa_li .question { position:relative; display:block; padding:25px 100px 25px 120px; background:url(../resources/images/ch2_Q.png) 40px center no-repeat;}
+.qa_li .question .iconDiv { position:absolute; right:40px; top:50%; -webkit-transform:translateY(-50%); -moz-transform:translateY(-50%); -o-transform:translateY(-50%); -ms-transform:translateY(-50%); transform:translateY(-50%); }
+.qa_li .answer { position:relative; display:none; padding:40px 120px; font-size:16px; color:#222; line-height:28px; background:#f6f6f6 url(../resources/images/ch2_A.png) 40px 40px no-repeat; border-top:1px solid #e4e4e4; font-size: 15px;}
+.modA { position:absolute; right:30px; bottom:30px; color:#e82b2b; }
+
+
+.hifaq{
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;   
+
+}
+
+.FAQ2{
+    margin-left: 420px;
+    
+    
+}
+
+
+
+
+.FA{
+    text-align: center;
+    font-size: 16px;
+    color: gray;
+}
+
+
+
+
