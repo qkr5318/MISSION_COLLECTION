@@ -1,0 +1,11 @@
+      cmd창에서 
+  
+     C:\cd workspace/Stationery/post 디렉토리로 이동한후
+
+     C:\sqlldr stationery/stationery control='post.ctl' data='post.csv' 명령어 실행
+
+     [C드라이브 최단 경로 폴더 경로 기준]
+ 
+     C:\cd C:\Stationery\Stationery\post
+
+     C:\sqlldr stationery/stationery control='post.ctl' data='post.csv'
